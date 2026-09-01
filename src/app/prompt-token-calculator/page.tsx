@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { TokenCounterClient } from "@/components/calculators/token-counter-client";
 
+const title = "Prompt Token Calculator — Count Tokens in Your Prompt";
+const description = "Paste your prompt to estimate its token count across GPT, Claude, and Gemini tokenizers, plus what it would cost as input to a sample model from each.";
+
 export const metadata: Metadata = {
-  title: "Prompt Token Calculator — Count Tokens in Your Prompt",
-  description:
-    "Paste your prompt to estimate its token count across GPT, Claude, and Gemini tokenizers, plus what it would cost as input to a sample model from each.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

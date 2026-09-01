@@ -4,10 +4,14 @@ import {
   buildAiCalculatorJsonLd,
 } from "@/components/calculators/ai-calculator-page";
 
+const title = "AI Token Cost Calculator — Estimate LLM Token Spend";
+const description = "Estimate what your AI tokens actually cost. Enter input/output token counts and requests per day to get per-request, daily, and monthly spend across OpenAI, Anthropic, and Google models.";
+
 export const metadata: Metadata = {
-  title: "AI Token Cost Calculator — Estimate LLM Token Spend",
-  description:
-    "Estimate what your AI tokens actually cost. Enter input/output token counts and requests per day to get per-request, daily, and monthly spend across OpenAI, Anthropic, and Google models.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

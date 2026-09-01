@@ -4,10 +4,14 @@ import {
   buildAiCalculatorJsonLd,
 } from "@/components/calculators/ai-calculator-page";
 
+const title = "OpenAI Token Cost Calculator — GPT Pricing by Model";
+const description = "Calculate OpenAI token costs across GPT-5.6, GPT-5, GPT-4.1, and GPT-4o. Enter input/output token counts to see per-request and monthly pricing for every current OpenAI model.";
+
 export const metadata: Metadata = {
-  title: "OpenAI Token Cost Calculator — GPT Pricing by Model",
-  description:
-    "Calculate OpenAI token costs across GPT-5.6, GPT-5, GPT-4.1, and GPT-4o. Enter input/output token counts to see per-request and monthly pricing for every current OpenAI model.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

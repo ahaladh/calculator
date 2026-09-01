@@ -4,10 +4,14 @@ import {
   buildAiCalculatorJsonLd,
 } from "@/components/calculators/ai-calculator-page";
 
+const title = "ChatGPT API Cost Calculator — GPT-5.6, GPT-5.1 & GPT-4o Pricing";
+const description = "Calculate the cost of building on the ChatGPT (OpenAI) API. Compare GPT-5.6, GPT-5.1, GPT-4.1, and GPT-4o pricing for your exact token usage and request volume.";
+
 export const metadata: Metadata = {
-  title: "ChatGPT API Cost Calculator — GPT-5.6, GPT-5.1 & GPT-4o Pricing",
-  description:
-    "Calculate the cost of building on the ChatGPT (OpenAI) API. Compare GPT-5.6, GPT-5.1, GPT-4.1, and GPT-4o pricing for your exact token usage and request volume.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

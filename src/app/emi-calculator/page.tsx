@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { EmiClient } from "@/components/calculators/emi-client";
 
+const title = "EMI Calculator — Calculate Loan EMI Online";
+const description = "Calculate your Equated Monthly Installment (EMI) for any loan — home, car, or personal. See total interest, total payment, and how EMI changes by tenure.";
+
 export const metadata: Metadata = {
-  title: "EMI Calculator — Calculate Loan EMI Online",
-  description:
-    "Calculate your Equated Monthly Installment (EMI) for any loan — home, car, or personal. See total interest, total payment, and how EMI changes by tenure.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

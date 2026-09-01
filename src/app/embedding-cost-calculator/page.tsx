@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { EmbeddingCostClient } from "@/components/calculators/embedding-cost-client";
 
+const title = "Embedding Cost Calculator — OpenAI & Google Pricing";
+const description = "Calculate the cost of embedding your document corpus with OpenAI or Google embedding models, based on document count, chunk size, and re-indexing frequency.";
+
 export const metadata: Metadata = {
-  title: "Embedding Cost Calculator — OpenAI & Google Pricing",
-  description:
-    "Calculate the cost of embedding your document corpus with OpenAI or Google embedding models, based on document count, chunk size, and re-indexing frequency.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

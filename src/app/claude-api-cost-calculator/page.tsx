@@ -4,10 +4,14 @@ import {
   buildAiCalculatorJsonLd,
 } from "@/components/calculators/ai-calculator-page";
 
+const title = "Claude API Cost Calculator — Anthropic Model Pricing";
+const description = "Calculate Claude API costs across Opus 5, Sonnet 5, and Haiku 4.5. Enter your token usage to see per-request, daily, and monthly Anthropic API pricing.";
+
 export const metadata: Metadata = {
-  title: "Claude API Cost Calculator — Anthropic Model Pricing",
-  description:
-    "Calculate Claude API costs across Opus 5, Sonnet 5, and Haiku 4.5. Enter your token usage to see per-request, daily, and monthly Anthropic API pricing.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { OvulationClient } from "@/components/calculators/ovulation-client";
 
+const title = "Ovulation Calculator — Estimate Your Fertile Window";
+const description = "Estimate your ovulation date and fertile window based on your last period and average cycle length. A statistical estimate — not a diagnosis or contraception method.";
+
 export const metadata: Metadata = {
-  title: "Ovulation Calculator — Estimate Your Fertile Window",
-  description:
-    "Estimate your ovulation date and fertile window based on your last period and average cycle length. A statistical estimate — not a diagnosis or contraception method.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

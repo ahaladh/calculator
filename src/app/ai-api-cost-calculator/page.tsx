@@ -4,10 +4,14 @@ import {
   buildAiCalculatorJsonLd,
 } from "@/components/calculators/ai-calculator-page";
 
+const title = "AI API Cost Calculator — Budget Your LLM API Spend";
+const description = "Plan your AI API budget before you build. Estimate monthly and yearly spend for OpenAI, Claude, and Gemini API calls based on your expected request volume and token usage.";
+
 export const metadata: Metadata = {
-  title: "AI API Cost Calculator — Budget Your LLM API Spend",
-  description:
-    "Plan your AI API budget before you build. Estimate monthly and yearly spend for OpenAI, Claude, and Gemini API calls based on your expected request volume and token usage.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

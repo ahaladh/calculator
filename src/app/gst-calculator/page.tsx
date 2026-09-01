@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { GstClient } from "@/components/calculators/gst-client";
 
+const title = "GST Calculator — Add or Remove GST (India, GST 2.0 Rates)";
+const description = "Calculate GST (Goods and Services Tax) on any amount — add GST to a base price or extract it from a GST-inclusive total, using the current GST 2.0 rate slabs.";
+
 export const metadata: Metadata = {
-  title: "GST Calculator — Add or Remove GST (India, GST 2.0 Rates)",
-  description:
-    "Calculate GST (Goods and Services Tax) on any amount — add GST to a base price or extract it from a GST-inclusive total, using the current GST 2.0 rate slabs.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { CalorieClient } from "@/components/calculators/calorie-client";
 
+const title = "Calorie Calculator — Daily Calorie Needs (BMR & TDEE)";
+const description = "Calculate your daily calorie needs using the Mifflin-St Jeor equation. See your BMR, maintenance calories, and targets for weight loss or gain.";
+
 export const metadata: Metadata = {
-  title: "Calorie Calculator — Daily Calorie Needs (BMR & TDEE)",
-  description:
-    "Calculate your daily calorie needs using the Mifflin-St Jeor equation. See your BMR, maintenance calories, and targets for weight loss or gain.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

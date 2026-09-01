@@ -4,10 +4,14 @@ import {
   buildAiCalculatorJsonLd,
 } from "@/components/calculators/ai-calculator-page";
 
+const title = "AI Model Cost Comparison — GPT vs Claude vs Gemini";
+const description = "Side-by-side AI model cost comparison across every current OpenAI, Anthropic, and Google model. Enter your usage once and see every model's monthly cost ranked cheapest first.";
+
 export const metadata: Metadata = {
-  title: "AI Model Cost Comparison — GPT vs Claude vs Gemini",
-  description:
-    "Side-by-side AI model cost comparison across every current OpenAI, Anthropic, and Google model. Enter your usage once and see every model's monthly cost ranked cheapest first.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

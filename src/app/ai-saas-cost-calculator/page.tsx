@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { SaasCostClient } from "@/components/calculators/saas-cost-client";
 
+const title = "AI SaaS Cost Calculator — Per-User AI Cost & Pricing";
+const description = "Estimate your AI feature's cost per user and get a suggested subscription price at your target margin, based on token usage and active user count.";
+
 export const metadata: Metadata = {
-  title: "AI SaaS Cost Calculator — Per-User AI Cost & Pricing",
-  description:
-    "Estimate your AI feature's cost per user and get a suggested subscription price at your target margin, based on token usage and active user count.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

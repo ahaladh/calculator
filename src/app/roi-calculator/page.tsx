@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { InvestmentRoiClient } from "@/components/calculators/investment-roi-client";
 
+const title = "ROI Calculator — Return on Investment & CAGR";
+const description = "Calculate the return on investment (ROI) and annualized return (CAGR) for any investment, given its initial value, final value, and holding period.";
+
 export const metadata: Metadata = {
-  title: "ROI Calculator — Return on Investment & CAGR",
-  description:
-    "Calculate the return on investment (ROI) and annualized return (CAGR) for any investment, given its initial value, final value, and holding period.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

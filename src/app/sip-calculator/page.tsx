@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { SipClient } from "@/components/calculators/sip-client";
 
+const title = "SIP Calculator — Calculate Mutual Fund SIP Returns";
+const description = "Calculate the maturity value of your SIP (Systematic Investment Plan). Enter monthly investment, expected return, and duration to see invested amount vs. wealth gained.";
+
 export const metadata: Metadata = {
-  title: "SIP Calculator — Calculate Mutual Fund SIP Returns",
-  description:
-    "Calculate the maturity value of your SIP (Systematic Investment Plan). Enter monthly investment, expected return, and duration to see invested amount vs. wealth gained.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

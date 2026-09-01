@@ -3,10 +3,14 @@ import { Suspense } from "react";
 import Link from "next/link";
 import { MortgageCalculatorClient } from "@/components/calculators/mortgage-calculator-client";
 
+const title = "Mortgage Payment Calculator — Estimate Your Monthly Payment";
+const description = "Calculate your monthly mortgage payment, total interest, and amortization breakdown. Free, precise, and updates instantly as you adjust home price, down payment, rate, and term.";
+
 export const metadata: Metadata = {
-  title: "Mortgage Payment Calculator — Estimate Your Monthly Payment",
-  description:
-    "Calculate your monthly mortgage payment, total interest, and amortization breakdown. Free, precise, and updates instantly as you adjust home price, down payment, rate, and term.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

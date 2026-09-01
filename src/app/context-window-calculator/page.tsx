@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { ContextWindowClient } from "@/components/calculators/context-window-client";
 
+const title = "Context Window Calculator — Check How Much Fits";
+const description = "Calculate how much of a model's context window your conversation or document uses, how much budget remains, and how many more messages will fit.";
+
 export const metadata: Metadata = {
-  title: "Context Window Calculator — Check How Much Fits",
-  description:
-    "Calculate how much of a model's context window your conversation or document uses, how much budget remains, and how many more messages will fit.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

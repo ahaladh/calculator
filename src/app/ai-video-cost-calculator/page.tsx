@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { VideoCostClient } from "@/components/calculators/media-cost-client";
 
+const title = "AI Video Generation Cost Calculator — Sora & Veo Pricing";
+const description = "Estimate the cost of AI video generation across OpenAI Sora and Google Veo tiers. Enter seconds per video and videos per day to see your monthly spend.";
+
 export const metadata: Metadata = {
-  title: "AI Video Generation Cost Calculator — Sora & Veo Pricing",
-  description:
-    "Estimate the cost of AI video generation across OpenAI Sora and Google Veo tiers. Enter seconds per video and videos per day to see your monthly spend.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

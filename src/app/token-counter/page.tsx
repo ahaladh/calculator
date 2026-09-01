@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { TokenCounterClient } from "@/components/calculators/token-counter-client";
 
+const title = "Token Counter — Count Characters, Words & AI Tokens";
+const description = "Free online token counter. Paste any text to instantly see character count, word count, and estimated AI token count for GPT, Claude, and Gemini.";
+
 export const metadata: Metadata = {
-  title: "Token Counter — Count Characters, Words & AI Tokens",
-  description:
-    "Free online token counter. Paste any text to instantly see character count, word count, and estimated AI token count for GPT, Claude, and Gemini.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

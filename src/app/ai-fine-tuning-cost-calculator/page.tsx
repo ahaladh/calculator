@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { FineTuningCostClient } from "@/components/calculators/finetuning-cost-client";
 
+const title = "AI Fine-Tuning Cost Calculator — OpenAI Training Pricing";
+const description = "Estimate the one-time training cost of fine-tuning an OpenAI model, based on your dataset size, epochs, and model choice.";
+
 export const metadata: Metadata = {
-  title: "AI Fine-Tuning Cost Calculator — OpenAI Training Pricing",
-  description:
-    "Estimate the one-time training cost of fine-tuning an OpenAI model, based on your dataset size, epochs, and model choice.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [
