@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { RagCostClient } from "@/components/calculators/rag-cost-client";
 
+const title = "RAG Cost Calculator — Retrieval-Augmented Generation Pricing";
+const description = "Estimate the full cost of a RAG pipeline — indexing, query embedding, and LLM generation — based on your corpus size, retrieval settings, and query volume.";
+
 export const metadata: Metadata = {
-  title: "RAG Cost Calculator — Retrieval-Augmented Generation Pricing",
-  description:
-    "Estimate the full cost of a RAG pipeline — indexing, query embedding, and LLM generation — based on your corpus size, retrieval settings, and query volume.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

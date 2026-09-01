@@ -3,10 +3,14 @@ import Link from "next/link";
 import { ContactForm } from "@/components/contact-form";
 import { CALCULATOR_SECTIONS } from "@/lib/calculator-registry";
 
+const title = "About & Contact";
+const description = "Learn what Calculator Hub is, how its calculators are built, and get in touch with questions or feedback.";
+
 export const metadata: Metadata = {
-  title: "About & Contact",
-  description:
-    "Learn what Calculator Hub is, how its calculators are built, and get in touch with questions or feedback.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const totalCalculators = CALCULATOR_SECTIONS.reduce(

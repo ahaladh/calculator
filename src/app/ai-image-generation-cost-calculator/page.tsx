@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { ImageCostClient } from "@/components/calculators/media-cost-client";
 
+const title = "AI Image Generation Cost Calculator — GPT Image & Imagen Pricing";
+const description = "Estimate the cost of AI image generation across GPT Image and Google Imagen tiers. Enter images per request and requests per day to see your monthly spend.";
+
 export const metadata: Metadata = {
-  title: "AI Image Generation Cost Calculator — GPT Image & Imagen Pricing",
-  description:
-    "Estimate the cost of AI image generation across GPT Image and Google Imagen tiers. Enter images per request and requests per day to see your monthly spend.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

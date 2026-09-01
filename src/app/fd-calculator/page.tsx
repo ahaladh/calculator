@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { FdClient } from "@/components/calculators/fd-client";
 
+const title = "FD Calculator — Fixed Deposit Maturity Calculator";
+const description = "Calculate your Fixed Deposit maturity value and interest earned, with quarterly compounding — the standard structure used by Indian banks.";
+
 export const metadata: Metadata = {
-  title: "FD Calculator — Fixed Deposit Maturity Calculator",
-  description:
-    "Calculate your Fixed Deposit maturity value and interest earned, with quarterly compounding — the standard structure used by Indian banks.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

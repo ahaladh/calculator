@@ -4,10 +4,14 @@ import {
   buildAiCalculatorJsonLd,
 } from "@/components/calculators/ai-calculator-page";
 
+const title = "Gemini API Cost Calculator — Google AI Model Pricing";
+const description = "Calculate Google Gemini API costs across Gemini 3.7 Flash, 3.5 Flash, Flash-Lite, and 3.1 Pro. Enter your token usage to see per-request and monthly pricing.";
+
 export const metadata: Metadata = {
-  title: "Gemini API Cost Calculator — Google AI Model Pricing",
-  description:
-    "Calculate Google Gemini API costs across Gemini 3.7 Flash, 3.5 Flash, Flash-Lite, and 3.1 Pro. Enter your token usage to see per-request and monthly pricing.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

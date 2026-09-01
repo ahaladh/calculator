@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { GpuCostClient } from "@/components/calculators/gpu-cost-client";
 
+const title = "GPU Cost Calculator — Cloud H100, A100 & B200 Rental Pricing";
+const description = "Calculate the cost of renting cloud GPUs — H100, A100, and B200 — across major providers, based on GPU count and usage hours.";
+
 export const metadata: Metadata = {
-  title: "GPU Cost Calculator — Cloud H100, A100 & B200 Rental Pricing",
-  description:
-    "Calculate the cost of renting cloud GPUs — H100, A100, and B200 — across major providers, based on GPU count and usage hours.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

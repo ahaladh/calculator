@@ -4,10 +4,14 @@ import {
   buildAiCalculatorJsonLd,
 } from "@/components/calculators/ai-calculator-page";
 
+const title = "LLM Cost Calculator — Compare Model Pricing Across Providers";
+const description = "Compare LLM costs across every major model — GPT, Claude, and Gemini — side by side. See which model is cheapest for your exact token usage and request volume.";
+
 export const metadata: Metadata = {
-  title: "LLM Cost Calculator — Compare Model Pricing Across Providers",
-  description:
-    "Compare LLM costs across every major model — GPT, Claude, and Gemini — side by side. See which model is cheapest for your exact token usage and request volume.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

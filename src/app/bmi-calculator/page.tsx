@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { BmiClient } from "@/components/calculators/bmi-client";
 
+const title = "BMI Calculator — Body Mass Index Calculator";
+const description =
+  "Calculate your Body Mass Index (BMI) in metric or imperial units. See your BMI category and a healthy weight range for your height.";
+
 export const metadata: Metadata = {
-  title: "BMI Calculator — Body Mass Index Calculator",
-  description:
-    "Calculate your Body Mass Index (BMI) in metric or imperial units. See your BMI category and a healthy weight range for your height.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

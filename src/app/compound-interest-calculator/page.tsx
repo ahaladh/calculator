@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { CompoundInterestClient } from "@/components/calculators/compound-interest-client";
 
+const title = "Compound Interest Calculator — Calculate Maturity Value";
+const description = "Calculate compound interest on any principal, with annual, semi-annual, quarterly, monthly, or daily compounding. See maturity value and total interest earned.";
+
 export const metadata: Metadata = {
-  title: "Compound Interest Calculator — Calculate Maturity Value",
-  description:
-    "Calculate compound interest on any principal, with annual, semi-annual, quarterly, monthly, or daily compounding. See maturity value and total interest earned.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

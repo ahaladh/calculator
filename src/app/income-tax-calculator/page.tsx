@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { IncomeTaxInClient } from "@/components/calculators/income-tax-in-client";
 
+const title = "Income Tax Calculator — India, FY 2026-27 (New & Old Regime)";
+const description = "Calculate your income tax for FY 2026-27 (AY 2027-28) under both the new and old tax regimes, and compare which one saves you more.";
+
 export const metadata: Metadata = {
-  title: "Income Tax Calculator — India, FY 2026-27 (New & Old Regime)",
-  description:
-    "Calculate your income tax for FY 2026-27 (AY 2027-28) under both the new and old tax regimes, and compare which one saves you more.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { EmiClient } from "@/components/calculators/emi-client";
 
+const title = "Loan Calculator — Compare EMI & Total Interest by Tenure";
+const description = "Calculate loan EMI and compare total interest cost across different tenures. Free loan calculator for home, personal, car, and education loans.";
+
 export const metadata: Metadata = {
-  title: "Loan Calculator — Compare EMI & Total Interest by Tenure",
-  description:
-    "Calculate loan EMI and compare total interest cost across different tenures. Free loan calculator for home, personal, car, and education loans.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

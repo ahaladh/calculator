@@ -3,9 +3,14 @@ import Link from "next/link";
 import { CALCULATOR_SECTIONS } from "@/lib/calculator-registry";
 import { CategoryIcon, CATEGORY_STYLES } from "@/components/category-icon";
 
+const title = "Sitemap";
+const description = "Every page on Calculator Hub, in one place.";
+
 export const metadata: Metadata = {
-  title: "Sitemap",
-  description: "Every page on Calculator Hub, in one place.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const SITE_LINKS = [

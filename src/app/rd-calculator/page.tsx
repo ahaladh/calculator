@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { RdClient } from "@/components/calculators/rd-client";
 
+const title = "RD Calculator — Recurring Deposit Maturity Calculator";
+const description = "Calculate your Recurring Deposit maturity value and interest earned, using the standard quarterly-compounded RD formula banks use.";
+
 export const metadata: Metadata = {
-  title: "RD Calculator — Recurring Deposit Maturity Calculator",
-  description:
-    "Calculate your Recurring Deposit maturity value and interest earned, using the standard quarterly-compounded RD formula banks use.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

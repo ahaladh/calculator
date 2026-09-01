@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const title = "Privacy Policy";
+const description = "How Calculator Hub handles your data — what's collected, what isn't, and how the contact form works.";
+
 export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description:
-    "How Calculator Hub handles your data — what's collected, what isn't, and how the contact form works.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 export default function PrivacyPolicyPage() {

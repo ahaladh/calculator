@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { SalaryInClient } from "@/components/calculators/salary-in-client";
 
+const title = "Salary Calculator — CTC to In-Hand Salary (India)";
+const description = "Convert your CTC to monthly in-hand salary. See the breakdown of basic pay, PF deductions, professional tax, and income tax under India's new or old tax regime.";
+
 export const metadata: Metadata = {
-  title: "Salary Calculator — CTC to In-Hand Salary (India)",
-  description:
-    "Convert your CTC to monthly in-hand salary. See the breakdown of basic pay, PF deductions, professional tax, and income tax under India's new or old tax regime.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

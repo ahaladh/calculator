@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { AgentCostClient } from "@/components/calculators/agent-cost-client";
 
+const title = "AI Agent Cost Calculator — Multi-Step Tool-Calling Cost";
+const description = "Estimate the cost of an AI agent that loops through multiple tool calls per task. Accounts for the compounding input tokens each step resends.";
+
 export const metadata: Metadata = {
-  title: "AI Agent Cost Calculator — Multi-Step Tool-Calling Cost",
-  description:
-    "Estimate the cost of an AI agent that loops through multiple tool calls per task. Accounts for the compounding input tokens each step resends.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [

@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { CalcPage, buildCalcJsonLd } from "@/components/calculators/calc-page";
 import { RoiClient } from "@/components/calculators/roi-client";
 
+const title = "AI ROI Calculator — Return on Investment for AI Tools";
+const description = "Calculate the return on investment of adopting an AI tool — value of time saved versus subscription cost, net monthly savings, and payback period.";
+
 export const metadata: Metadata = {
-  title: "AI ROI Calculator — Return on Investment for AI Tools",
-  description:
-    "Calculate the return on investment of adopting an AI tool — value of time saved versus subscription cost, net monthly savings, and payback period.",
+  title,
+  description,
+  openGraph: { title, description, images: ["/opengraph-image"] },
+  twitter: { title, description, images: ["/twitter-image"] },
 };
 
 const faqs = [
