@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { CALCULATOR_SECTIONS } from "@/lib/calculator-registry";
 import { CategoryIcon, CATEGORY_STYLES } from "@/components/category-icon";
+import { HeroVisual } from "@/components/hero-visual";
+import { AnimatedCounter } from "@/components/animated-counter";
+import { RevealOnScroll } from "@/components/reveal-on-scroll";
 
 const totalCalculators = CALCULATOR_SECTIONS.reduce(
   (sum, section) => sum + section.items.length,
@@ -19,41 +22,58 @@ export default function Home() {
             opacity: 0.08,
           }}
         />
-        <div className="relative mx-auto flex w-full max-w-5xl flex-col gap-5 px-4 py-20 sm:px-6">
-          <span className="w-fit rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted">
-            {totalCalculators} free calculators · no sign-up
-          </span>
-          <h1 className="max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl">
-            Numbers you can trust, answers in seconds.
-          </h1>
-          <p className="max-w-xl text-lg text-muted">
-            Fast, precise calculators for finance, health, and AI costs —
-            built with arbitrary-precision math and verified against known
-            benchmarks.
-          </p>
+        <div className="relative mx-auto grid w-full max-w-5xl grid-cols-1 gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-8">
+          <div className="flex flex-col gap-5">
+            <span
+              className="animate-fade-in-up w-fit rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted"
+              style={{ animationDelay: "0ms" }}
+            >
+              <AnimatedCounter value={totalCalculators} /> free calculators ·
+              no sign-up
+            </span>
+            <h1
+              className="animate-fade-in-up max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl"
+              style={{ animationDelay: "80ms" }}
+            >
+              Numbers you can trust, answers in seconds.
+            </h1>
+            <p
+              className="animate-fade-in-up max-w-xl text-lg text-muted"
+              style={{ animationDelay: "160ms" }}
+            >
+              Fast, precise calculators for finance, health, and AI costs —
+              built with arbitrary-precision math and verified against known
+              benchmarks.
+            </p>
 
-          <div className="mt-2 flex flex-wrap gap-2">
-            {CALCULATOR_SECTIONS.map((section) => {
-              const style = CATEGORY_STYLES[section.slug];
-              return (
-                <Link
-                  key={section.slug}
-                  href={`#${section.slug}`}
-                  className="flex items-center gap-2 rounded-full border border-border bg-background px-3.5 py-2 text-sm font-medium transition-colors hover:border-accent hover:text-accent"
-                >
-                  <span
-                    className={`flex h-5 w-5 items-center justify-center rounded-full ${style?.badge ?? "bg-accent/10"}`}
+            <div
+              className="animate-fade-in-up mt-2 flex flex-wrap gap-2"
+              style={{ animationDelay: "240ms" }}
+            >
+              {CALCULATOR_SECTIONS.map((section) => {
+                const style = CATEGORY_STYLES[section.slug];
+                return (
+                  <Link
+                    key={section.slug}
+                    href={`#${section.slug}`}
+                    className="flex items-center gap-2 rounded-full border border-border bg-background px-3.5 py-2 text-sm font-medium transition-colors hover:border-accent hover:text-accent"
                   >
-                    <CategoryIcon
-                      slug={section.slug}
-                      className={`h-3 w-3 ${style?.text ?? "text-accent"}`}
-                    />
-                  </span>
-                  {section.category}
-                </Link>
-              );
-            })}
+                    <span
+                      className={`flex h-5 w-5 items-center justify-center rounded-full ${style?.badge ?? "bg-accent/10"}`}
+                    >
+                      <CategoryIcon
+                        slug={section.slug}
+                        className={`h-3 w-3 ${style?.text ?? "text-accent"}`}
+                      />
+                    </span>
+                    {section.category}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
+
+          <HeroVisual />
         </div>
       </div>
 
@@ -61,12 +81,8 @@ export default function Home() {
         {CALCULATOR_SECTIONS.map((section) => {
           const style = CATEGORY_STYLES[section.slug];
           return (
-            <div
-              key={section.slug}
-              id={section.slug}
-              className="flex scroll-mt-20 flex-col gap-5"
-            >
-              <div className="flex items-center gap-2.5">
+            <RevealOnScroll key={section.slug} className="flex flex-col gap-5">
+              <div id={section.slug} className="flex scroll-mt-20 items-center gap-2.5">
                 <span
                   className={`flex h-8 w-8 items-center justify-center rounded-lg ${style?.badge ?? "bg-accent/10"}`}
                 >
@@ -88,7 +104,7 @@ export default function Home() {
                     className="group flex flex-col gap-3 rounded-xl border border-border bg-surface p-5 transition-all hover:-translate-y-0.5 hover:border-accent hover:shadow-md"
                   >
                     <span
-                      className={`flex h-9 w-9 items-center justify-center rounded-lg ${style?.badge ?? "bg-accent/10"}`}
+                      className={`flex h-9 w-9 items-center justify-center rounded-lg ${style?.badge ?? "bg-accent/10"} transition-transform group-hover:scale-110`}
                     >
                       <CategoryIcon
                         slug={section.slug}
@@ -104,7 +120,7 @@ export default function Home() {
                   </Link>
                 ))}
               </div>
-            </div>
+            </RevealOnScroll>
           );
         })}
       </div>
