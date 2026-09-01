@@ -116,6 +116,9 @@ export function SiteFooter() {
             professional before acting on them.
           </p>
           <div className="flex shrink-0 flex-wrap items-center gap-x-4 gap-y-2 whitespace-nowrap text-xs text-muted">
+            <Link href="/sitemap" className="transition-colors hover:text-accent">
+              Sitemap
+            </Link>
             <Link href="/privacy-policy" className="transition-colors hover:text-accent">
               Privacy Policy
             </Link>
