@@ -11,8 +11,15 @@ export function proxy(request: NextRequest) {
   const host = request.headers.get("host") ?? "";
 
   if (host.startsWith("www.")) {
-    const url = request.nextUrl.clone();
-    url.host = host.slice(4);
+    // Built explicitly (not via request.nextUrl.clone()) — the cloned
+    // NextURL can carry the app's internal listening port along even
+    // after overwriting .host, which leaked ":3000" into production
+    // redirects and sent visitors (and Googlebot) to an unreachable URL.
+    const apexHost = host.slice(4).split(":")[0];
+    const url = new URL(
+      `${request.nextUrl.pathname}${request.nextUrl.search}`,
+      `https://${apexHost}`,
+    );
     return NextResponse.redirect(url, 308);
   }
 
