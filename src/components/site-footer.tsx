@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CALCULATOR_SECTIONS } from "@/lib/calculator-registry";
+import { SERVICES } from "@/lib/services";
 import { CategoryIcon, CATEGORY_STYLES } from "@/components/category-icon";
 
 const COMPANY_LINKS = [
@@ -78,30 +79,58 @@ export function SiteFooter() {
                 </svg>
               </span>
               <span className="text-lg font-semibold tracking-tight text-foreground">
-                Calculator Hub
+                World of the Developers
               </span>
             </Link>
             <p className="max-w-xs text-sm leading-relaxed text-muted">
-              Free, precise calculators for finance, health, and AI costs —
-              built with arbitrary-precision math and no sign-up required.
+              Custom IT development for hosting and web businesses, plus a
+              free collection of finance, health, and AI-cost calculators on
+              the side.
             </p>
           </div>
 
           <FooterColumn slug="company" title="Company" links={COMPANY_LINKS} />
         </div>
 
-        <div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3 lg:border-l lg:border-border lg:pl-12">
-          {CALCULATOR_SECTIONS.map((section) => (
-            <FooterColumn
-              key={section.slug}
-              slug={section.slug}
-              title={section.category}
-              links={section.items.map((item) => ({
-                href: `/${item.slug}`,
-                label: item.title,
-              }))}
-            />
-          ))}
+        <div className="flex flex-col gap-10 lg:border-l lg:border-border lg:pl-12">
+          <div className="flex flex-col gap-4">
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-foreground">
+              Services
+            </h3>
+            <div className="grid grid-cols-2 gap-x-8 gap-y-2.5 sm:grid-cols-3">
+              {SERVICES.map((service) => (
+                <Link
+                  key={service.slug}
+                  href={`/#${service.slug}`}
+                  className="text-sm text-muted transition-colors hover:text-accent"
+                >
+                  {service.title}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <Link
+              href="/calculators"
+              className="w-fit text-xs font-semibold uppercase tracking-wider text-foreground transition-colors hover:text-accent"
+            >
+              Calculators
+            </Link>
+            <div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3">
+              {CALCULATOR_SECTIONS.map((section) => (
+                <FooterColumn
+                  key={section.slug}
+                  slug={section.slug}
+                  title={section.category}
+                  links={section.items.map((item) => ({
+                    href: `/${item.slug}`,
+                    label: item.title,
+                  }))}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
@@ -122,7 +151,7 @@ export function SiteFooter() {
             <Link href="/privacy-policy" className="transition-colors hover:text-accent">
               Privacy Policy
             </Link>
-            <span>© {year} Calculator Hub</span>
+            <span>© {year} World of the Developers</span>
             <a
               href="#"
               className="flex items-center gap-1 font-medium transition-colors hover:text-accent"

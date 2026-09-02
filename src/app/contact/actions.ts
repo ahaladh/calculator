@@ -45,10 +45,10 @@ export async function submitContactForm(
   try {
     const resend = new Resend(apiKey);
     const { error } = await resend.emails.send({
-      from: "Calculator Hub <onboarding@resend.dev>",
+      from: "World of the Developers <onboarding@resend.dev>",
       to: CONTACT_RECIPIENT,
       replyTo: email,
-      subject: `Calculator Hub contact form: ${name}`,
+      subject: `World of the Developers contact form: ${name}`,
       text: `From: ${name} <${email}>\n\n${message}`,
     });
 

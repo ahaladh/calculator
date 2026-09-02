@@ -1,6 +1,6 @@
 import { CategoryIcon } from "@/components/category-icon";
 
-interface FloatingCard {
+export interface FloatingCard {
   slug: string;
   label: string;
   badge: string;
@@ -12,7 +12,7 @@ interface FloatingCard {
   rotate: string;
 }
 
-const CARDS: FloatingCard[] = [
+const CALCULATOR_CARDS: FloatingCard[] = [
   {
     slug: "finance",
     label: "EMI Calculator",
@@ -70,7 +70,7 @@ const CARDS: FloatingCard[] = [
   },
 ];
 
-export function HeroVisual() {
+export function FloatingCardsVisual({ cards }: { cards: FloatingCard[] }) {
   return (
     <div
       aria-hidden="true"
@@ -89,7 +89,7 @@ export function HeroVisual() {
         style={{ animationDelay: "6s" }}
       />
 
-      {CARDS.map((card) => (
+      {cards.map((card) => (
         <div
           key={card.slug}
           className="animate-icon-float absolute flex items-center gap-2 rounded-xl border border-border bg-background/90 px-3 py-2.5 shadow-lg backdrop-blur-sm"
@@ -113,4 +113,8 @@ export function HeroVisual() {
       ))}
     </div>
   );
+}
+
+export function HeroVisual() {
+  return <FloatingCardsVisual cards={CALCULATOR_CARDS} />;
 }

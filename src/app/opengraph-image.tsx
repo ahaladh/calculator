@@ -57,12 +57,12 @@ export default function Image() {
               <line x1="8" y1="18" x2="16" y2="18" />
             </svg>
           </div>
-          <div style={{ fontSize: 72, fontWeight: 700, color: "#0f172a" }}>
-            Calculator Hub
+          <div style={{ fontSize: 64, fontWeight: 700, color: "#0f172a" }}>
+            World of the Developers
           </div>
         </div>
         <div style={{ marginTop: 24, fontSize: 32, color: "#64748b" }}>
-          Finance, health &amp; AI-cost calculators — no sign-up required
+          IT development &amp; free calculators — no sign-up required
         </div>
       </div>
     ),
