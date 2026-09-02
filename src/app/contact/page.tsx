@@ -43,7 +43,7 @@ export default function ContactPage() {
       </Link>
 
       <section id="about" className="flex scroll-mt-20 flex-col gap-4">
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+        <h1 className="font-serif text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
           About World of the Developers
         </h1>
         <p className="max-w-2xl text-muted">
@@ -85,7 +85,7 @@ export default function ContactPage() {
 
       <section id="contact" className="flex scroll-mt-20 flex-col gap-6">
         <div className="flex flex-col gap-2">
-          <h2 className="text-2xl font-semibold tracking-tight">Contact</h2>
+          <h2 className="font-serif text-2xl font-normal tracking-tight text-foreground">Contact</h2>
           <p className="max-w-2xl text-muted">
             Found a bug, have a calculator request, or spotted a pricing
             figure that&apos;s gone stale? Send a message below.

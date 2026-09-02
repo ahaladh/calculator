@@ -36,7 +36,7 @@ export default function PrivacyPolicyPage() {
       </Link>
 
       <header className="flex flex-col gap-2">
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+        <h1 className="font-serif text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
           Privacy Policy
         </h1>
         <p className="text-sm text-muted">Last updated: September 1, 2026</p>

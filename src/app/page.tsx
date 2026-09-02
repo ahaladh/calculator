@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SERVICES } from "@/lib/services";
-import { CategoryIcon, CATEGORY_STYLES } from "@/components/category-icon";
-import { ServicesHeroVisual } from "@/components/services-hero-visual";
-import { AnimatedCounter } from "@/components/animated-counter";
 import { RevealOnScroll } from "@/components/reveal-on-scroll";
 
 const title = "World of the Developers — Web, WHMCS & Hosting Panel Development";
@@ -21,130 +18,109 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <div className="relative overflow-hidden border-b border-border">
-        <div
-          className="pointer-events-none absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(60% 90% at 15% 0%, var(--color-accent) 0%, transparent 60%)",
-            opacity: 0.08,
-          }}
-        />
-        <div className="relative mx-auto grid w-full max-w-5xl grid-cols-1 gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-8">
-          <div className="flex flex-col gap-5">
-            <span
-              className="animate-fade-in-up w-fit rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted"
-              style={{ animationDelay: "0ms" }}
-            >
-              <AnimatedCounter value={SERVICES.length} /> services · custom-built
-            </span>
-            <h1
-              className="animate-fade-in-up max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl"
-              style={{ animationDelay: "80ms" }}
-            >
-              Custom IT development for hosting &amp; web businesses.
-            </h1>
-            <p
-              className="animate-fade-in-up max-w-xl text-lg text-muted"
-              style={{ animationDelay: "160ms" }}
-            >
-              From single-page websites to WHMCS modules and hosting panel
-              plugins — built exactly to your workflow, not a generic
-              template.
-            </p>
+      <div className="border-b border-border">
+        <div className="mx-auto flex w-full max-w-3xl flex-col gap-6 px-4 py-28 sm:px-6 sm:py-36">
+          <span
+            className="animate-fade-in-up text-xs font-medium uppercase tracking-[0.2em] text-muted"
+            style={{ animationDelay: "0ms" }}
+          >
+            IT Development Studio
+          </span>
+          <h1
+            className="animate-fade-in-up font-serif text-4xl font-normal leading-[1.1] tracking-tight text-foreground sm:text-6xl"
+            style={{ animationDelay: "80ms" }}
+          >
+            Custom IT development for hosting &amp; web businesses.
+          </h1>
+          <p
+            className="animate-fade-in-up max-w-xl text-lg leading-relaxed text-muted"
+            style={{ animationDelay: "160ms" }}
+          >
+            From single-page websites to WHMCS modules and hosting panel
+            plugins — built exactly to your workflow, not a generic
+            template.
+          </p>
 
-            <div
-              className="animate-fade-in-up mt-2 flex flex-wrap gap-3"
-              style={{ animationDelay: "240ms" }}
+          <div
+            className="animate-fade-in-up mt-4 flex flex-wrap items-center gap-8"
+            style={{ animationDelay: "240ms" }}
+          >
+            <Link
+              href="/contact#contact"
+              className="rounded-md bg-foreground px-6 py-3 text-sm font-medium text-background transition-opacity hover:opacity-80"
             >
-              <Link
-                href="/contact#contact"
-                className="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+              Get in touch
+            </Link>
+            <Link
+              href="/calculators"
+              className="group flex items-center gap-1.5 text-sm font-medium text-muted transition-colors hover:text-foreground"
+            >
+              Free calculators
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="transition-transform group-hover:translate-x-0.5"
               >
-                Get in touch
-              </Link>
-              <Link
-                href="/calculators"
-                className="flex items-center gap-1.5 rounded-full border border-border bg-background px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
-              >
-                Free calculators
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M5 12h14" />
-                  <path d="M12 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
+                <path d="M5 12h14" />
+                <path d="M12 5l7 7-7 7" />
+              </svg>
+            </Link>
           </div>
-
-          <ServicesHeroVisual />
         </div>
       </div>
 
-      <div className="mx-auto flex w-full max-w-5xl flex-col gap-16 px-4 py-16 sm:px-6">
-        <RevealOnScroll className="flex flex-col gap-5">
-          <div id="services" className="flex scroll-mt-20 flex-col gap-2">
-            <h2 className="text-2xl font-semibold tracking-tight">Services</h2>
-            <p className="max-w-2xl text-muted">
+      <div className="mx-auto flex w-full max-w-3xl flex-col gap-20 px-4 py-24 sm:px-6">
+        <RevealOnScroll className="flex flex-col gap-10">
+          <div id="services" className="flex scroll-mt-20 flex-col gap-3">
+            <h2 className="font-serif text-3xl font-normal tracking-tight text-foreground">
+              Services
+            </h2>
+            <p className="max-w-xl text-muted">
               Practical, purpose-built development — no bloated agency
               retainers, just the thing you need shipped correctly.
             </p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {SERVICES.map((service) => {
-              const style = CATEGORY_STYLES[service.icon];
-              return (
-                <div
-                  key={service.slug}
-                  id={service.slug}
-                  className="flex scroll-mt-24 flex-col gap-3 rounded-xl border border-border bg-surface p-5 transition-all hover:-translate-y-0.5 hover:border-accent hover:shadow-md"
-                >
-                  <span
-                    className={`flex h-9 w-9 items-center justify-center rounded-lg ${style?.badge ?? "bg-accent/10"}`}
-                  >
-                    <CategoryIcon
-                      slug={service.icon}
-                      className={`h-4.5 w-4.5 ${style?.text ?? "text-accent"}`}
-                    />
-                  </span>
-                  <div className="flex flex-col gap-1">
-                    <h3 className="text-lg font-semibold">{service.title}</h3>
-                    <p className="text-sm text-muted">{service.description}</p>
-                  </div>
+
+          <div className="flex flex-col divide-y divide-border border-t border-border">
+            {SERVICES.map((service, index) => (
+              <div
+                key={service.slug}
+                id={service.slug}
+                className="flex scroll-mt-24 flex-col gap-2 py-8 sm:flex-row sm:gap-10"
+              >
+                <span className="font-serif text-sm italic text-muted sm:w-10 sm:shrink-0">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-lg font-semibold text-foreground">
+                    {service.title}
+                  </h3>
+                  <p className="max-w-xl text-muted">{service.description}</p>
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </RevealOnScroll>
 
         <RevealOnScroll>
           <Link
             href="/calculators"
-            className="group flex flex-col items-start gap-4 rounded-2xl border border-border bg-surface p-8 transition-all hover:border-accent hover:shadow-md sm:flex-row sm:items-center sm:justify-between"
+            className="group flex flex-col gap-3 border-t border-border pt-8"
           >
-            <div className="flex items-center gap-4">
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent/10">
-                <CategoryIcon slug="finance" className="h-6 w-6 text-accent" />
-              </span>
-              <div className="flex flex-col gap-1">
-                <h2 className="text-xl font-semibold tracking-tight">
-                  Free calculators, built on the side
-                </h2>
-                <p className="max-w-xl text-muted">
-                  A free collection of finance, health, and AI-cost
-                  calculators — no sign-up, runs entirely in your browser.
-                </p>
-              </div>
-            </div>
-            <span className="flex shrink-0 items-center gap-1.5 rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors group-hover:border-accent group-hover:text-accent">
+            <h2 className="font-serif text-2xl font-normal tracking-tight text-foreground">
+              Free calculators, built on the side
+            </h2>
+            <p className="max-w-xl text-muted">
+              A free collection of finance, health, and AI-cost calculators —
+              no sign-up, runs entirely in your browser.
+            </p>
+            <span className="mt-1 flex items-center gap-1.5 text-sm font-medium text-foreground">
               Browse calculators
               <svg
                 width="14"
@@ -152,7 +128,7 @@ export default function Home() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2.5"
+                strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 className="transition-transform group-hover:translate-x-0.5"

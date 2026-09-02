@@ -72,7 +72,9 @@ export function CalcPage({
           All calculators
         </Link>
         <header className="flex flex-col gap-2">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{h1}</h1>
+          <h1 className="font-serif text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
+            {h1}
+          </h1>
           <p className="max-w-2xl text-muted">{intro}</p>
         </header>
       </div>
@@ -81,7 +83,7 @@ export function CalcPage({
 
       {methodology && (
         <section className="flex flex-col gap-4">
-          <h2 className="text-2xl font-semibold tracking-tight">
+          <h2 className="font-serif text-2xl font-normal tracking-tight text-foreground">
             How this is calculated
           </h2>
           {methodology}
@@ -95,7 +97,7 @@ export function CalcPage({
       )}
 
       <section className="flex flex-col gap-4">
-        <h2 className="text-2xl font-semibold tracking-tight">
+        <h2 className="font-serif text-2xl font-normal tracking-tight text-foreground">
           Frequently asked questions
         </h2>
         <div className="flex flex-col divide-y divide-border rounded-lg border border-border">

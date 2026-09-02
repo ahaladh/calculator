@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CALCULATOR_SECTIONS } from "@/lib/calculator-registry";
 import { CategoryIcon, CATEGORY_STYLES } from "@/components/category-icon";
-import { HeroVisual } from "@/components/hero-visual";
 import { AnimatedCounter } from "@/components/animated-counter";
 import { RevealOnScroll } from "@/components/reveal-on-scroll";
 
@@ -26,67 +25,44 @@ export const metadata: Metadata = {
 export default function CalculatorsPage() {
   return (
     <div className="flex flex-col">
-      <div className="relative overflow-hidden border-b border-border">
-        <div
-          className="pointer-events-none absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(60% 90% at 15% 0%, var(--color-accent) 0%, transparent 60%)",
-            opacity: 0.08,
-          }}
-        />
-        <div className="relative mx-auto grid w-full max-w-5xl grid-cols-1 gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-8">
-          <div className="flex flex-col gap-5">
-            <span
-              className="animate-fade-in-up w-fit rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted"
-              style={{ animationDelay: "0ms" }}
-            >
-              <AnimatedCounter value={totalCalculators} /> free calculators ·
-              no sign-up
-            </span>
-            <h1
-              className="animate-fade-in-up max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl"
-              style={{ animationDelay: "80ms" }}
-            >
-              Numbers you can trust, answers in seconds.
-            </h1>
-            <p
-              className="animate-fade-in-up max-w-xl text-lg text-muted"
-              style={{ animationDelay: "160ms" }}
-            >
-              Fast, precise calculators for finance, health, and AI costs —
-              built with arbitrary-precision math and verified against known
-              benchmarks.
-            </p>
+      <div className="border-b border-border">
+        <div className="mx-auto flex w-full max-w-3xl flex-col gap-6 px-4 py-24 sm:px-6 sm:py-32">
+          <span
+            className="animate-fade-in-up text-xs font-medium uppercase tracking-[0.2em] text-muted"
+            style={{ animationDelay: "0ms" }}
+          >
+            <AnimatedCounter value={totalCalculators} /> free calculators · no
+            sign-up
+          </span>
+          <h1
+            className="animate-fade-in-up font-serif text-4xl font-normal leading-[1.1] tracking-tight text-foreground sm:text-5xl"
+            style={{ animationDelay: "80ms" }}
+          >
+            Numbers you can trust, answers in seconds.
+          </h1>
+          <p
+            className="animate-fade-in-up max-w-xl text-lg leading-relaxed text-muted"
+            style={{ animationDelay: "160ms" }}
+          >
+            Fast, precise calculators for finance, health, and AI costs —
+            built with arbitrary-precision math and verified against known
+            benchmarks.
+          </p>
 
-            <div
-              className="animate-fade-in-up mt-2 flex flex-wrap gap-2"
-              style={{ animationDelay: "240ms" }}
-            >
-              {CALCULATOR_SECTIONS.map((section) => {
-                const style = CATEGORY_STYLES[section.slug];
-                return (
-                  <Link
-                    key={section.slug}
-                    href={`#${section.slug}`}
-                    className="flex items-center gap-2 rounded-full border border-border bg-background px-3.5 py-2 text-sm font-medium transition-colors hover:border-accent hover:text-accent"
-                  >
-                    <span
-                      className={`flex h-5 w-5 items-center justify-center rounded-full ${style?.badge ?? "bg-accent/10"}`}
-                    >
-                      <CategoryIcon
-                        slug={section.slug}
-                        className={`h-3 w-3 ${style?.text ?? "text-accent"}`}
-                      />
-                    </span>
-                    {section.category}
-                  </Link>
-                );
-              })}
-            </div>
+          <div
+            className="animate-fade-in-up mt-2 flex flex-wrap gap-2"
+            style={{ animationDelay: "240ms" }}
+          >
+            {CALCULATOR_SECTIONS.map((section) => (
+              <Link
+                key={section.slug}
+                href={`#${section.slug}`}
+                className="rounded-md border border-border px-3.5 py-2 text-sm font-medium text-muted transition-colors hover:border-foreground hover:text-foreground"
+              >
+                {section.category}
+              </Link>
+            ))}
           </div>
-
-          <HeroVisual />
         </div>
       </div>
 
@@ -104,7 +80,7 @@ export default function CalculatorsPage() {
                     className={`h-4.5 w-4.5 ${style?.text ?? "text-accent"}`}
                   />
                 </span>
-                <h2 className="text-lg font-semibold tracking-tight">
+                <h2 className="font-serif text-xl font-normal tracking-tight text-foreground">
                   {section.category}
                 </h2>
                 <span className="text-sm text-muted">{section.items.length}</span>
@@ -114,10 +90,10 @@ export default function CalculatorsPage() {
                   <Link
                     key={calc.slug}
                     href={`/${calc.slug}`}
-                    className="group flex flex-col gap-3 rounded-xl border border-border bg-surface p-5 transition-all hover:-translate-y-0.5 hover:border-accent hover:shadow-md"
+                    className="group flex flex-col gap-3 rounded-lg border border-border bg-surface p-5 transition-colors hover:border-foreground"
                   >
                     <span
-                      className={`flex h-9 w-9 items-center justify-center rounded-lg ${style?.badge ?? "bg-accent/10"} transition-transform group-hover:scale-110`}
+                      className={`flex h-9 w-9 items-center justify-center rounded-lg ${style?.badge ?? "bg-accent/10"}`}
                     >
                       <CategoryIcon
                         slug={section.slug}
@@ -125,7 +101,7 @@ export default function CalculatorsPage() {
                       />
                     </span>
                     <div className="flex flex-col gap-1">
-                      <h3 className="text-lg font-semibold group-hover:text-accent">
+                      <h3 className="text-lg font-semibold text-foreground">
                         {calc.title}
                       </h3>
                       <p className="text-sm text-muted">{calc.description}</p>

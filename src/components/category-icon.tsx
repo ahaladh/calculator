@@ -92,20 +92,24 @@ const PATHS: Record<string, ReactNode> = {
   ),
 };
 
+// One restrained ink treatment for every category — an editorial catalog
+// reads calmer differentiated by label, not by a different color per icon.
+const NEUTRAL_STYLE = { badge: "bg-foreground/[0.05]", text: "text-foreground" };
+
 export const CATEGORY_STYLES: Record<string, { badge: string; text: string }> = {
-  finance: { badge: "bg-emerald-500/10", text: "text-emerald-600 dark:text-emerald-400" },
-  health: { badge: "bg-rose-500/10", text: "text-rose-600 dark:text-rose-400" },
-  "ai-model-cost": { badge: "bg-indigo-500/10", text: "text-indigo-600 dark:text-indigo-400" },
-  "tokens-context": { badge: "bg-violet-500/10", text: "text-violet-600 dark:text-violet-400" },
-  "ai-infrastructure": { badge: "bg-sky-500/10", text: "text-sky-600 dark:text-sky-400" },
-  "ai-business": { badge: "bg-amber-500/10", text: "text-amber-600 dark:text-amber-400" },
-  company: { badge: "bg-slate-500/10", text: "text-slate-600 dark:text-slate-400" },
-  "web-development": { badge: "bg-cyan-500/10", text: "text-cyan-600 dark:text-cyan-400" },
-  "whmcs-module": { badge: "bg-orange-500/10", text: "text-orange-600 dark:text-orange-400" },
-  "whmcs-theming": { badge: "bg-fuchsia-500/10", text: "text-fuchsia-600 dark:text-fuchsia-400" },
-  "hosting-plugin": { badge: "bg-teal-500/10", text: "text-teal-600 dark:text-teal-400" },
-  "billing-automation": { badge: "bg-yellow-500/10", text: "text-yellow-600 dark:text-yellow-400" },
-  "domain-ssl-tooling": { badge: "bg-blue-500/10", text: "text-blue-600 dark:text-blue-400" },
+  finance: NEUTRAL_STYLE,
+  health: NEUTRAL_STYLE,
+  "ai-model-cost": NEUTRAL_STYLE,
+  "tokens-context": NEUTRAL_STYLE,
+  "ai-infrastructure": NEUTRAL_STYLE,
+  "ai-business": NEUTRAL_STYLE,
+  company: NEUTRAL_STYLE,
+  "web-development": NEUTRAL_STYLE,
+  "whmcs-module": NEUTRAL_STYLE,
+  "whmcs-theming": NEUTRAL_STYLE,
+  "hosting-plugin": NEUTRAL_STYLE,
+  "billing-automation": NEUTRAL_STYLE,
+  "domain-ssl-tooling": NEUTRAL_STYLE,
 };
 
 export function CategoryIcon({ slug, className }: { slug: string; className?: string }) {

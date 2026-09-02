@@ -49,7 +49,7 @@ export default function SitemapPage() {
       </Link>
 
       <header className="flex flex-col gap-2">
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">Sitemap</h1>
+        <h1 className="font-serif text-3xl font-normal tracking-tight text-foreground sm:text-4xl">Sitemap</h1>
         <p className="max-w-2xl text-muted">
           Every page on World of the Developers. Looking for machine-readable
           version? See{" "}
