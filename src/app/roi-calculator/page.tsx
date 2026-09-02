@@ -8,6 +8,7 @@ const description = "Calculate the return on investment (ROI) and annualized ret
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/roi-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

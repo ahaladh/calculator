@@ -8,6 +8,7 @@ const description = "Estimate your AI feature's cost per user and get a suggeste
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/ai-saas-cost-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

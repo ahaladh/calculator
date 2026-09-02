@@ -8,6 +8,7 @@ const description = "Calculate the return on investment of adopting an AI tool â
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/ai-roi-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

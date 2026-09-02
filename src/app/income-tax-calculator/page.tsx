@@ -8,6 +8,7 @@ const description = "Calculate your income tax for FY 2026-27 (AY 2027-28) under
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/income-tax-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

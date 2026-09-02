@@ -8,6 +8,7 @@ const description = "Calculate loan EMI and compare total interest cost across d
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/loan-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

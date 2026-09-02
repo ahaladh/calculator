@@ -9,6 +9,7 @@ const description = "Calculate your monthly mortgage payment, total interest, an
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/mortgage-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

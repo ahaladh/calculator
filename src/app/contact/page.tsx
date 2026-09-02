@@ -9,6 +9,7 @@ const description = "Learn what Calculator Hub is, how its calculators are built
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/contact" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

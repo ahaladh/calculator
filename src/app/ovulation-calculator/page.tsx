@@ -8,6 +8,7 @@ const description = "Estimate your ovulation date and fertile window based on yo
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/ovulation-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

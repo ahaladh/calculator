@@ -8,6 +8,7 @@ const description = "Estimate the full cost of a RAG pipeline — indexing, quer
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/rag-cost-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

@@ -7,6 +7,7 @@ const description = "How Calculator Hub handles your data — what's collected, 
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/privacy-policy" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

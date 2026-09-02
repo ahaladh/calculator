@@ -10,6 +10,7 @@ const description = "Compare LLM costs across every major model — GPT, Claude,
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/llm-cost-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

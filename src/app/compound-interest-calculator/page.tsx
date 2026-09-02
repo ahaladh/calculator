@@ -8,6 +8,7 @@ const description = "Calculate compound interest on any principal, with annual, 
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/compound-interest-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

@@ -8,6 +8,7 @@ const description = "Calculate the maturity value of your SIP (Systematic Invest
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/sip-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

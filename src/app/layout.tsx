@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Calculator Hub",
   },
   description: SITE_DESCRIPTION,
+  alternates: { canonical: "/" },
   openGraph: {
     siteName: "Calculator Hub",
     type: "website",

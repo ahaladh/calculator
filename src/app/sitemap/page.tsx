@@ -9,6 +9,7 @@ const description = "Every page on Calculator Hub, in one place.";
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/sitemap" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

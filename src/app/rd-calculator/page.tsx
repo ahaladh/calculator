@@ -8,6 +8,7 @@ const description = "Calculate your Recurring Deposit maturity value and interes
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/rd-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };
