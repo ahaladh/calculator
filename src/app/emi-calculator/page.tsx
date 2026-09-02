@@ -8,6 +8,7 @@ const description = "Calculate your Equated Monthly Installment (EMI) for any lo
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/emi-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

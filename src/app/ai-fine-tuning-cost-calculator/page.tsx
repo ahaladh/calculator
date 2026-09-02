@@ -8,6 +8,7 @@ const description = "Estimate the one-time training cost of fine-tuning an OpenA
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/ai-fine-tuning-cost-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

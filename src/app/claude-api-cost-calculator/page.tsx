@@ -10,6 +10,7 @@ const description = "Calculate Claude API costs across Opus 5, Sonnet 5, and Hai
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/claude-api-cost-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

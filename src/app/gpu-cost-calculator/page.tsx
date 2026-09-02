@@ -8,6 +8,7 @@ const description = "Calculate the cost of renting cloud GPUs — H100, A100, an
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/gpu-cost-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

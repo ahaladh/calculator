@@ -8,6 +8,7 @@ const description = "Calculate your daily calorie needs using the Mifflin-St Jeo
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/calorie-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

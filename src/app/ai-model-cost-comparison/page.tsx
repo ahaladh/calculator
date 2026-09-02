@@ -10,6 +10,7 @@ const description = "Side-by-side AI model cost comparison across every current 
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/ai-model-cost-comparison" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

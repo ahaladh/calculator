@@ -8,6 +8,7 @@ const description = "Estimate the cost of an AI agent that loops through multipl
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/ai-agent-cost-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

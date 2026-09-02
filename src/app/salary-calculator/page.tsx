@@ -8,6 +8,7 @@ const description = "Convert your CTC to monthly in-hand salary. See the breakdo
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/salary-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

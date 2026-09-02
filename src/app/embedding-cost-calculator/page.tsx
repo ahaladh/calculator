@@ -8,6 +8,7 @@ const description = "Calculate the cost of embedding your document corpus with O
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/embedding-cost-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

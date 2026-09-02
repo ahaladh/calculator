@@ -8,6 +8,7 @@ const description = "Estimate the cost of AI video generation across OpenAI Sora
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/ai-video-cost-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

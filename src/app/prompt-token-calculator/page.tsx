@@ -8,6 +8,7 @@ const description = "Paste your prompt to estimate its token count across GPT, C
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/prompt-token-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

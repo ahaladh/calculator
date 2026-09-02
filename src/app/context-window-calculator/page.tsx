@@ -8,6 +8,7 @@ const description = "Calculate how much of a model's context window your convers
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/context-window-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

@@ -10,6 +10,7 @@ const description = "Plan your AI API budget before you build. Estimate monthly 
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/ai-api-cost-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

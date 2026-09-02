@@ -10,6 +10,7 @@ const description = "Calculate Google Gemini API costs across Gemini 3.7 Flash, 
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/gemini-api-cost-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

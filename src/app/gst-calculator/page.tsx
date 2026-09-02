@@ -8,6 +8,7 @@ const description = "Calculate GST (Goods and Services Tax) on any amount — ad
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/gst-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

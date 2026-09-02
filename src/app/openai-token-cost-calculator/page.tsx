@@ -10,6 +10,7 @@ const description = "Calculate OpenAI token costs across GPT-5.6, GPT-5, GPT-4.1
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/openai-token-cost-calculator" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };

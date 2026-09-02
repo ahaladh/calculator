@@ -8,6 +8,7 @@ const description = "Free online token counter. Paste any text to instantly see 
 export const metadata: Metadata = {
   title,
   description,
+  alternates: { canonical: "/token-counter" },
   openGraph: { title, description, images: ["/opengraph-image"] },
   twitter: { title, description, images: ["/twitter-image"] },
 };
