@@ -53,6 +53,43 @@ const PATHS: Record<string, ReactNode> = {
       <line x1="12" y1="8" x2="12.01" y2="8" />
     </>
   ),
+  "web-development": (
+    <>
+      <rect x="2" y="4" width="20" height="16" rx="2" />
+      <line x1="2" y1="9" x2="22" y2="9" />
+      <line x1="6" y1="6.5" x2="6.01" y2="6.5" />
+    </>
+  ),
+  "whmcs-module": (
+    <>
+      <path d="M21 8l-9-5-9 5 9 5 9-5z" />
+      <path d="M3 8v8l9 5 9-5V8" />
+      <line x1="12" y1="13" x2="12" y2="21" />
+    </>
+  ),
+  "whmcs-theming": (
+    <>
+      <path d="M12 2a10 10 0 1 0 8.5 15.3c.6-1 .3-2.3-.8-2.8-1-.5-2.2-.1-2.7.9a2 2 0 0 1-3.7-1c0-1.1.9-2 2-2h2.2c1.7 0 3-1.3 3-3A10 10 0 0 0 12 2z" />
+      <line x1="7" y1="9" x2="7.01" y2="9" />
+      <line x1="10.5" y1="6.5" x2="10.51" y2="6.5" />
+      <line x1="15" y1="7" x2="15.01" y2="7" />
+    </>
+  ),
+  "hosting-plugin": (
+    <>
+      <path d="M9 2v6" />
+      <path d="M15 2v6" />
+      <path d="M6 8h12v3a6 6 0 0 1-12 0V8z" />
+      <path d="M12 17v5" />
+    </>
+  ),
+  "billing-automation": <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />,
+  "domain-ssl-tooling": (
+    <>
+      <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z" />
+      <path d="M9 12l2 2 4-4" />
+    </>
+  ),
 };
 
 export const CATEGORY_STYLES: Record<string, { badge: string; text: string }> = {
@@ -63,6 +100,12 @@ export const CATEGORY_STYLES: Record<string, { badge: string; text: string }> = 
   "ai-infrastructure": { badge: "bg-sky-500/10", text: "text-sky-600 dark:text-sky-400" },
   "ai-business": { badge: "bg-amber-500/10", text: "text-amber-600 dark:text-amber-400" },
   company: { badge: "bg-slate-500/10", text: "text-slate-600 dark:text-slate-400" },
+  "web-development": { badge: "bg-cyan-500/10", text: "text-cyan-600 dark:text-cyan-400" },
+  "whmcs-module": { badge: "bg-orange-500/10", text: "text-orange-600 dark:text-orange-400" },
+  "whmcs-theming": { badge: "bg-fuchsia-500/10", text: "text-fuchsia-600 dark:text-fuchsia-400" },
+  "hosting-plugin": { badge: "bg-teal-500/10", text: "text-teal-600 dark:text-teal-400" },
+  "billing-automation": { badge: "bg-yellow-500/10", text: "text-yellow-600 dark:text-yellow-400" },
+  "domain-ssl-tooling": { badge: "bg-blue-500/10", text: "text-blue-600 dark:text-blue-400" },
 };
 
 export function CategoryIcon({ slug, className }: { slug: string; className?: string }) {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const title = "Privacy Policy";
-const description = "How Calculator Hub handles your data — what's collected, what isn't, and how the contact form works.";
+const description = "How World of the Developers handles your data — what's collected, what isn't, and how the contact form works.";
 
 export const metadata: Metadata = {
   title,
@@ -32,7 +32,7 @@ export default function PrivacyPolicyPage() {
           <path d="M19 12H5" />
           <path d="M12 19l-7-7 7-7" />
         </svg>
-        All calculators
+        Home
       </Link>
 
       <header className="flex flex-col gap-2">

@@ -16,27 +16,27 @@ const geistMono = Geist_Mono({
 });
 
 const SITE_DESCRIPTION =
-  "Fast, precise calculators for finance, health, and AI costs — no sign-up required.";
+  "Custom IT development for hosting and web businesses, plus free calculators for finance, health, and AI costs.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Calculator Hub",
-    template: "%s | Calculator Hub",
+    default: "World of the Developers",
+    template: "%s | World of the Developers",
   },
   description: SITE_DESCRIPTION,
   alternates: { canonical: "/" },
   openGraph: {
-    siteName: "Calculator Hub",
+    siteName: "World of the Developers",
     type: "website",
     locale: "en_US",
     url: "/",
-    title: "Calculator Hub",
+    title: "World of the Developers",
     description: SITE_DESCRIPTION,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Calculator Hub",
+    title: "World of the Developers",
     description: SITE_DESCRIPTION,
   },
 };

@@ -4,7 +4,7 @@ import { CALCULATOR_SECTIONS } from "@/lib/calculator-registry";
 import { CategoryIcon, CATEGORY_STYLES } from "@/components/category-icon";
 
 const title = "Sitemap";
-const description = "Every page on Calculator Hub, in one place.";
+const description = "Every page on World of the Developers, in one place.";
 
 export const metadata: Metadata = {
   title,
@@ -16,6 +16,8 @@ export const metadata: Metadata = {
 
 const SITE_LINKS = [
   { href: "/", label: "Home" },
+  { href: "/#services", label: "Services" },
+  { href: "/calculators", label: "Calculators" },
   { href: "/contact#about", label: "About" },
   { href: "/contact#contact", label: "Contact" },
   { href: "/privacy-policy", label: "Privacy Policy" },
@@ -43,13 +45,13 @@ export default function SitemapPage() {
           <path d="M19 12H5" />
           <path d="M12 19l-7-7 7-7" />
         </svg>
-        All calculators
+        Home
       </Link>
 
       <header className="flex flex-col gap-2">
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">Sitemap</h1>
         <p className="max-w-2xl text-muted">
-          Every page on Calculator Hub. Looking for machine-readable
+          Every page on World of the Developers. Looking for machine-readable
           version? See{" "}
           <a href="/sitemap.xml" className="text-accent hover:underline">
             sitemap.xml

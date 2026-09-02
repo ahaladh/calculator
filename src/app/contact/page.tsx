@@ -4,7 +4,7 @@ import { ContactForm } from "@/components/contact-form";
 import { CALCULATOR_SECTIONS } from "@/lib/calculator-registry";
 
 const title = "About & Contact";
-const description = "Learn what Calculator Hub is, how its calculators are built, and get in touch with questions or feedback.";
+const description = "Learn what World of the Developers builds, how the calculators are made, and get in touch with questions or feedback.";
 
 export const metadata: Metadata = {
   title,
@@ -39,33 +39,33 @@ export default function ContactPage() {
           <path d="M19 12H5" />
           <path d="M12 19l-7-7 7-7" />
         </svg>
-        All calculators
+        Home
       </Link>
 
       <section id="about" className="flex scroll-mt-20 flex-col gap-4">
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-          About Calculator Hub
+          About World of the Developers
         </h1>
         <p className="max-w-2xl text-muted">
-          Calculator Hub is a free collection of {totalCalculators}{" "}
-          calculators spanning finance, health, and AI costs — built to be
-          fast, precise, and usable without an account.
+          World of the Developers builds custom IT tooling — single-page
+          websites, WHMCS modules, and hosting panel plugins — and
+          maintains a free collection of {totalCalculators} calculators for
+          finance, health, and AI costs on the side.
         </p>
         <div className="grid gap-4 sm:grid-cols-3">
           <div className="rounded-xl border border-border bg-surface p-5">
-            <h2 className="font-semibold">Precise by default</h2>
+            <h2 className="font-semibold">Built to your workflow</h2>
             <p className="mt-1 text-sm text-muted">
-              Every financial calculation runs on arbitrary-precision
-              decimal math, not raw floating point — no rounding surprises
-              on large numbers.
+              Every project is scoped to what you actually need — no
+              generic templates or bloated agency retainers.
             </p>
           </div>
           <div className="rounded-xl border border-border bg-surface p-5">
             <h2 className="font-semibold">Checked against benchmarks</h2>
             <p className="mt-1 text-sm text-muted">
-              Formulas are verified against known worked examples and
-              official pricing sources — not just implemented and assumed
-              correct.
+              Calculator formulas are verified against known worked
+              examples and official pricing sources — not just implemented
+              and assumed correct.
             </p>
           </div>
           <div className="rounded-xl border border-border bg-surface p-5">

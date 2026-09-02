@@ -53,7 +53,7 @@ export function CalcPage({
 
       <div className="flex flex-col gap-6">
         <Link
-          href="/"
+          href="/calculators"
           className="flex w-fit items-center gap-1.5 text-sm font-medium text-muted transition-colors hover:text-accent"
         >
           <svg

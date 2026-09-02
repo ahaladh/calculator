@@ -1,5 +1,9 @@
 import Link from "next/link";
-import { CALCULATOR_SECTIONS } from "@/lib/calculator-registry";
+
+const NAV_LINKS = [
+  { label: "Services", href: "/#services" },
+  { label: "Calculators", href: "/calculators" },
+];
 
 export function SiteHeader() {
   return (
@@ -29,28 +33,28 @@ export function SiteHeader() {
             </svg>
           </span>
           <span className="text-base font-semibold tracking-tight text-foreground">
-            Calculator Hub
+            World of the Developers
           </span>
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm font-medium lg:flex">
-          {CALCULATOR_SECTIONS.map((section) => (
+          {NAV_LINKS.map((link) => (
             <Link
-              key={section.slug}
-              href={`/#${section.slug}`}
+              key={link.href}
+              href={link.href}
               className="text-muted transition-colors hover:text-foreground"
             >
-              {section.category}
+              {link.label}
             </Link>
           ))}
         </nav>
 
         <div className="flex items-center gap-2">
           <Link
-            href="/"
+            href="/calculators"
             className="rounded-lg border border-border px-3 py-1.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent lg:hidden"
           >
-            Home
+            Calculators
           </Link>
           <Link
             href="/contact#contact"
