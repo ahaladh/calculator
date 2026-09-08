@@ -5,6 +5,7 @@ import { CategoryIcon, CATEGORY_STYLES } from "@/components/category-icon";
 
 const COMPANY_LINKS = [
   { label: "About", href: "/contact#about" },
+  { label: "Portfolio", href: "/portfolio" },
   { label: "Contact", href: "/contact#contact" },
   { label: "Privacy Policy", href: "/privacy-policy" },
 ];

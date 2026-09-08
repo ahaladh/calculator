@@ -18,6 +18,7 @@ const SITE_LINKS = [
   { href: "/", label: "Home" },
   { href: "/#services", label: "Services" },
   { href: "/calculators", label: "Calculators" },
+  { href: "/portfolio", label: "Portfolio" },
   { href: "/contact#about", label: "About" },
   { href: "/contact#contact", label: "Contact" },
   { href: "/privacy-policy", label: "Privacy Policy" },
