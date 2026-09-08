@@ -1,7 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { CALCULATOR_SECTIONS } from "@/lib/calculator-registry";
 import { SERVICES } from "@/lib/services";
 import { CategoryIcon, CATEGORY_STYLES } from "@/components/category-icon";
+import { PROFILE } from "@/lib/portfolio";
 
 const COMPANY_LINKS = [
   { label: "About", href: "/contact#about" },
@@ -48,8 +52,43 @@ function FooterColumn({
   );
 }
 
-export function SiteFooter() {
+function PortfolioFooter() {
   const year = new Date().getFullYear();
+
+  return (
+    <footer className="border-t border-white/10 bg-[#050608]">
+      <div className="mx-auto flex w-full max-w-5xl flex-col gap-3 px-4 py-6 text-sm sm:flex-row sm:items-center sm:justify-between sm:px-6">
+        <p className="text-neutral-500">
+          © {year} {PROFILE.name}
+        </p>
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-neutral-400">
+          <Link href="/" className="transition-colors hover:text-white">
+            Home
+          </Link>
+          <Link href="/contact#contact" className="transition-colors hover:text-white">
+            Contact
+          </Link>
+          <a
+            href={PROFILE.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-white"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+export function SiteFooter() {
+  const pathname = usePathname();
+  const year = new Date().getFullYear();
+
+  if (pathname === "/portfolio") {
+    return <PortfolioFooter />;
+  }
 
   return (
     <footer className="border-t-2 border-accent/15 bg-surface">
