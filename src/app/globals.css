@@ -63,6 +63,22 @@ body {
   }
 }
 
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.08);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 6s ease-in-out infinite;
+}
+
 @keyframes fade-in-up {
   from {
     opacity: 0;
@@ -102,6 +118,7 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .animate-blob,
   .animate-icon-float,
+  .animate-pulse-glow,
   .animate-fade-in-up {
     animation: none !important;
   }
