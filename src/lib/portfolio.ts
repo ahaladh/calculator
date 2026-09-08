@@ -20,9 +20,17 @@ export const PROFILE = {
   location: "Kozhikode, Kerala, India",
   email: "ahaladh4011@gmail.com",
   linkedin: "https://www.linkedin.com/in/ahaladh-p-7b03b399",
+  tagline: "Building reliable web platforms, end to end.",
+  taglineAccent: "reliable",
   summary:
     "Software developer with 6+ years building web applications and hosting-industry tooling — Laravel and PHP on the backend, React and Node.js on the front end, with deep, hands-on experience customizing and extending WHMCS and WordPress for real client businesses.",
 };
+
+export const STATS = [
+  { value: "6+", label: "Years experience" },
+  { value: "3", label: "Companies" },
+  { value: "13", label: "Technologies" },
+];
 
 export const SKILLS = [
   "Laravel",
