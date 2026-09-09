@@ -1,13 +1,15 @@
 "use client";
 
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 
 export function RevealOnScroll({
   children,
   className = "",
+  style,
 }: {
   children: ReactNode;
   className?: string;
+  style?: CSSProperties;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -31,7 +33,11 @@ export function RevealOnScroll({
   }, []);
 
   return (
-    <div ref={ref} className={`reveal ${visible ? "reveal-visible" : ""} ${className}`}>
+    <div
+      ref={ref}
+      className={`reveal ${visible ? "reveal-visible" : ""} ${className}`}
+      style={style}
+    >
       {children}
     </div>
   );
