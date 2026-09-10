@@ -9,6 +9,7 @@ import { PROFILE } from "@/lib/portfolio";
 
 const COMPANY_LINKS = [
   { label: "About", href: "/contact#about" },
+  { label: "Blog", href: "/blog" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "Contact", href: "/contact#contact" },
   { label: "Privacy Policy", href: "/privacy-policy" },
