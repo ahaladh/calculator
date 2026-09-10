@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CALCULATOR_SECTIONS } from "@/lib/calculator-registry";
+import { BLOG_POSTS } from "@/lib/blog";
 import { CategoryIcon, CATEGORY_STYLES } from "@/components/category-icon";
 
 const title = "Sitemap";
@@ -18,6 +19,7 @@ const SITE_LINKS = [
   { href: "/", label: "Home" },
   { href: "/#services", label: "Services" },
   { href: "/calculators", label: "Calculators" },
+  { href: "/blog", label: "Blog" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/contact#about", label: "About" },
   { href: "/contact#contact", label: "Contact" },
@@ -84,6 +86,34 @@ export default function SitemapPage() {
                   className="text-sm text-muted transition-colors hover:text-accent"
                 >
                   {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <div className="flex items-center gap-2">
+            <span
+              className={`flex h-6 w-6 items-center justify-center rounded-md ${CATEGORY_STYLES.finance?.badge ?? "bg-accent/10"}`}
+            >
+              <CategoryIcon
+                slug="finance"
+                className={`h-3.5 w-3.5 ${CATEGORY_STYLES.finance?.text ?? "text-accent"}`}
+              />
+            </span>
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-foreground">
+              Blog
+            </h2>
+          </div>
+          <ul className="flex flex-col gap-2.5">
+            {BLOG_POSTS.map((post) => (
+              <li key={post.slug}>
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="text-sm text-muted transition-colors hover:text-accent"
+                >
+                  {post.title}
                 </Link>
               </li>
             ))}
