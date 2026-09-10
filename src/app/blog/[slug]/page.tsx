@@ -26,12 +26,10 @@ export async function generateMetadata({
       description: post.description,
       type: "article",
       publishedTime: post.date,
-      images: ["/opengraph-image"],
     },
     twitter: {
       title: post.title,
       description: post.description,
-      images: ["/twitter-image"],
     },
   };
 }
@@ -92,7 +90,13 @@ export default async function BlogPostPage({
         All guides
       </Link>
 
-      <header className="flex flex-col gap-3">
+      <header className="flex flex-col gap-5">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`/blog/${post.slug}/opengraph-image`}
+          alt=""
+          className="aspect-[1200/630] w-full rounded-xl border border-border object-cover"
+        />
         <span className="w-fit rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted">
           {post.category}
         </span>
