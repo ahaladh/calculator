@@ -68,28 +68,36 @@ export default function BlogIndexPage() {
               <RevealOnScroll key={post.slug} style={{ transitionDelay: `${i * 60}ms` }}>
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="group flex h-full flex-col gap-3 rounded-xl border border-border bg-surface p-5 transition-all hover:-translate-y-0.5 hover:border-accent hover:shadow-md"
+                  className="group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-surface transition-all hover:-translate-y-0.5 hover:border-accent hover:shadow-md"
                 >
-                  <div className="flex items-center gap-2">
-                    <span
-                      className={`flex h-8 w-8 items-center justify-center rounded-lg ${style?.badge ?? "bg-accent/10"}`}
-                    >
-                      <CategoryIcon
-                        slug={iconSlug}
-                        className={`h-4 w-4 ${style?.text ?? "text-accent"}`}
-                      />
-                    </span>
-                    <span className="text-xs font-medium uppercase tracking-wide text-muted">
-                      {post.category}
-                    </span>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={`/blog/${post.slug}/opengraph-image`}
+                    alt=""
+                    className="aspect-[1200/630] w-full object-cover"
+                  />
+                  <div className="flex flex-1 flex-col gap-3 p-5">
+                    <div className="flex items-center gap-2">
+                      <span
+                        className={`flex h-8 w-8 items-center justify-center rounded-lg ${style?.badge ?? "bg-accent/10"}`}
+                      >
+                        <CategoryIcon
+                          slug={iconSlug}
+                          className={`h-4 w-4 ${style?.text ?? "text-accent"}`}
+                        />
+                      </span>
+                      <span className="text-xs font-medium uppercase tracking-wide text-muted">
+                        {post.category}
+                      </span>
+                    </div>
+                    <h2 className="text-lg font-semibold leading-snug group-hover:text-accent">
+                      {post.title}
+                    </h2>
+                    <p className="flex-1 text-sm text-muted">{post.description}</p>
+                    <p className="text-xs text-muted">
+                      {formatDate(post.date)} · {post.readingTime}
+                    </p>
                   </div>
-                  <h2 className="text-lg font-semibold leading-snug group-hover:text-accent">
-                    {post.title}
-                  </h2>
-                  <p className="flex-1 text-sm text-muted">{post.description}</p>
-                  <p className="text-xs text-muted">
-                    {formatDate(post.date)} · {post.readingTime}
-                  </p>
                 </Link>
               </RevealOnScroll>
             );
