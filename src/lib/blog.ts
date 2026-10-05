@@ -347,6 +347,536 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "compound-interest-explained",
+    title: "Compound Interest Explained: Why Time Matters More Than the Rate",
+    description:
+      "How compound interest actually works, a worked comparison against simple interest, the Rule of 72, and why starting early beats chasing a higher rate.",
+    date: "2026-10-05",
+    category: "Finance",
+    readingTime: "5 min read",
+    relatedCalculator: {
+      slug: "compound-interest-calculator",
+      label: "Compound Interest Calculator",
+    },
+    sections: [
+      {
+        paragraphs: [
+          "Compound interest is the single idea behind fixed deposits, recurring deposits, savings accounts, bonds, and the interest on every loan you've ever taken. It's simple to state — interest earns interest — but its effect over long periods is large enough that it's worth understanding properly rather than just trusting a bank's maturity figure.",
+        ],
+      },
+      {
+        heading: "Simple vs compound interest",
+        paragraphs: [
+          "Simple interest is calculated only on the original principal, for the whole period. Compound interest is calculated on the principal plus all the interest already earned, so each period's interest is slightly larger than the last.",
+          "Take ₹1,00,000 invested at 8% a year for 10 years. With simple interest you earn ₹8,000 every year, ₹80,000 in total, ending at ₹1,80,000. With annual compounding the balance grows to about ₹2,15,892 — the extra ₹35,892 is purely interest earning interest.",
+        ],
+      },
+      {
+        heading: "The formula",
+        paragraphs: [
+          "A = P × (1 + r/n)^(n×t)",
+          "Where P is the principal, r is the annual interest rate as a decimal, n is how many times per year interest is compounded, and t is the time in years. A is the final amount, so the interest earned is A − P.",
+        ],
+      },
+      {
+        heading: "Does compounding frequency matter?",
+        paragraphs: [
+          "A little. Run the same ₹1,00,000 at 8% for 10 years with monthly compounding instead of annual, and the maturity value rises to roughly ₹2,21,964 — about ₹6,000 more than annual compounding. The gain is real but modest compared with the effect of the rate or the time period, because the difference only comes from interest starting to earn interest a bit sooner.",
+        ],
+      },
+      {
+        heading: "The Rule of 72",
+        paragraphs: [
+          "A quick mental shortcut for how long money takes to double: divide 72 by the annual rate. At 8%, that's 72 ÷ 8 = 9 years. The exact answer is about 9.01 years, so the shortcut is very close in the range of rates most people actually deal with. It's a good sanity check on any claimed return — if someone promises to double your money in two years, that implies about 36% a year, which should make you ask hard questions.",
+        ],
+      },
+      {
+        heading: "Why starting early beats a higher rate",
+        paragraphs: [
+          "Because growth compounds, the later years do most of the work — the balance is bigger, so the same percentage produces a bigger rupee gain. That's why adding five extra years to the start of an investment usually helps more than finding a rate one or two percentage points higher. Time is the one input you can't buy back later.",
+        ],
+      },
+      {
+        heading: "The same math works against you on debt",
+        paragraphs: [
+          "Everything above applies in reverse to borrowing. A credit card balance that compounds monthly at a high rate grows the same way your savings would — which is why paying down high-interest debt is often a better 'return' than almost any investment available to you.",
+        ],
+      },
+      {
+        heading: "Run your own numbers",
+        paragraphs: [
+          "Our Compound Interest Calculator lets you change the principal, rate, period, and compounding frequency (annual through daily) and see the maturity value and total interest instantly. It's also the building block behind the FD and RD calculators on this site.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-gst-is-calculated",
+    title: "How GST Is Calculated: Adding and Removing It Correctly",
+    description:
+      "The two formulas for adding GST to a price and extracting it from a GST-inclusive total, the common mistake that gets the second one wrong, and how CGST, SGST, and IGST split.",
+    date: "2026-10-05",
+    category: "Finance",
+    readingTime: "5 min read",
+    relatedCalculator: { slug: "gst-calculator", label: "GST Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "Almost everyone who invoices in India eventually has to do one of two GST calculations: add GST to a price they know, or work out how much of a final price was GST. They use different formulas, and mixing them up is one of the most common small accounting errors.",
+        ],
+      },
+      {
+        heading: "Adding GST to a base price",
+        paragraphs: [
+          "total = base × (1 + rate)",
+          "If a service costs ₹10,000 before tax and the GST rate is 18%, the GST is ₹10,000 × 0.18 = ₹1,800 and the invoice total is ₹11,800.",
+        ],
+      },
+      {
+        heading: "Removing GST from a GST-inclusive total",
+        paragraphs: [
+          "base = total ÷ (1 + rate)",
+          "Working backwards from ₹11,800 at 18%: base = 11,800 ÷ 1.18 = ₹10,000, so the GST portion is ₹1,800.",
+        ],
+      },
+      {
+        heading: "The mistake almost everyone makes once",
+        paragraphs: [
+          "The tempting shortcut for the second case is to take 18% of the total and subtract it: 18% of ₹11,800 is ₹2,124, giving a 'base' of ₹9,676. That's wrong, because the 18% was applied to the base price, not to the total. The tax is 18% of the smaller number, so you have to divide by 1.18 rather than subtract 18% of the larger one. The error grows with the rate and the amount, so it matters on large invoices.",
+        ],
+      },
+      {
+        heading: "CGST, SGST, and IGST",
+        paragraphs: [
+          "For a sale within a single state, the GST is split equally between the central government (CGST) and the state government (SGST) — at an 18% rate, that's 9% each. For a sale between states, the full amount is charged as IGST instead. The total tax is the same either way; only how it's recorded and shared between governments differs, and your invoice has to show the correct split.",
+        ],
+      },
+      {
+        heading: "Input tax credit: why GST isn't a cascading tax",
+        paragraphs: [
+          "GST applies at every stage of a supply chain, but a registered business can claim credit for GST it already paid on its own purchases against the GST it collects on sales. So only the value a business adds is effectively taxed, instead of tax piling on top of tax at each stage. That's the main reason GST replaced the older system of multiple overlapping indirect taxes.",
+        ],
+      },
+      {
+        heading: "Rates: check the one for your item",
+        paragraphs: [
+          "Since the GST 2.0 rationalization that took effect on 22 September 2025, the structure is built mainly around 5% and 18%, with 0% for exempt essentials and a 40% rate for select luxury and sin goods. But rates are assigned per item or service category by the GST Council, so always confirm the rate that applies to your specific supply against the official notification rather than assuming a default.",
+        ],
+      },
+      {
+        heading: "Skip the arithmetic",
+        paragraphs: [
+          "Our GST Calculator handles both directions — add GST or remove it — for the standard slabs or a custom rate, and shows the base, the tax, and the total together.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-income-tax-slabs-work-india",
+    title: "How Income Tax Slabs Really Work: Marginal Rates, Rebate, and Cess",
+    description:
+      "Why moving into a higher slab doesn't tax your whole income at that rate, how the 87A rebate and 4% cess fit in, and how to think about old vs new regime.",
+    date: "2026-10-05",
+    category: "Finance",
+    readingTime: "6 min read",
+    relatedCalculator: { slug: "income-tax-calculator", label: "Income Tax Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "One of the most persistent tax myths is that earning a rupee more can push you into a higher slab and make you take home less overall. It can't — because slab rates are marginal, not applied to your whole income. Understanding that one idea removes most of the confusion about income tax.",
+        ],
+      },
+      {
+        heading: "Marginal slabs, explained with an example",
+        paragraphs: [
+          "Each slab's rate applies only to the portion of your taxable income that falls inside that slab. The numbers below are illustrative, to show the mechanics — the actual slabs differ by regime and financial year.",
+          "Suppose slabs of 0% up to ₹4,00,000, 5% from ₹4,00,000 to ₹8,00,000, and 10% from ₹8,00,000 to ₹12,00,000, and a taxable income of ₹10,00,000:",
+        ],
+        list: [
+          "First ₹4,00,000 taxed at 0% = ₹0",
+          "Next ₹4,00,000 taxed at 5% = ₹20,000",
+          "Remaining ₹2,00,000 taxed at 10% = ₹20,000",
+          "Total tax before cess = ₹40,000, an effective rate of 4% on the full ₹10,00,000",
+        ],
+      },
+      {
+        heading: "Marginal rate vs effective rate",
+        paragraphs: [
+          "In that example your marginal rate — the rate on your next rupee of income — is 10%, but your effective rate — total tax divided by total income — is only 4%. The effective rate is always lower than the marginal rate, which is why a raise never makes you worse off: only the additional income is taxed at the higher rate.",
+        ],
+      },
+      {
+        heading: "Standard deduction and taxable income",
+        paragraphs: [
+          "Slabs apply to taxable income, not gross salary. For salaried taxpayers, a standard deduction comes off first, and under the old regime further deductions (80C investments, home loan interest, HRA, and others) can reduce taxable income more. Always work out taxable income before applying the slabs.",
+        ],
+      },
+      {
+        heading: "The Section 87A rebate",
+        paragraphs: [
+          "A rebate under Section 87A can cancel the tax entirely for taxable income up to a threshold. That's why someone can fall inside a taxable slab on paper and still pay nothing. Above the threshold, the rebate generally disappears, and tax is charged on the full slab structure — so the rules near the threshold deserve a careful calculation.",
+        ],
+      },
+      {
+        heading: "Health and education cess",
+        paragraphs: [
+          "After the tax and any rebate are calculated, a flat 4% cess is added on top of the tax amount (not on your income). Using the earlier example, ₹40,000 of tax becomes ₹41,600 with cess, before any rebate. Surcharge, a separate additional charge for very high incomes, applies on top of that above ₹50 lakh.",
+        ],
+      },
+      {
+        heading: "Old regime or new regime?",
+        paragraphs: [
+          "The new regime has lower rates and fewer deductions; the old regime has higher rates but lets you claim a long list of deductions. The new regime tends to win when you claim few deductions, and the old one can win when your deductions are large — but the crossover point depends on your exact numbers, so the only reliable way to choose is to compute both. Tax rules change with each Budget, so check the current figures for your financial year.",
+        ],
+      },
+      {
+        heading: "Compare both regimes on your own income",
+        paragraphs: [
+          "Our Income Tax Calculator computes the tax under both regimes side by side for the current rules, including rebate and cess, so you can see which one leaves you with more. It's an estimate, not tax advice — confirm anything important with the official Income Tax Department sources or a qualified professional.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "mortgage-amortization-explained",
+    title: "Mortgage Amortization Explained: Where Your Payment Actually Goes",
+    description:
+      "How a mortgage payment is calculated, why early payments are mostly interest, and what a 15-year vs 30-year term really costs in total interest.",
+    date: "2026-10-05",
+    category: "Finance",
+    readingTime: "6 min read",
+    relatedCalculator: { slug: "mortgage-calculator", label: "Mortgage Payment Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "A mortgage payment looks like one number, but it's really two moving parts — interest and principal — and the balance between them shifts every single month. Seeing that split is the key to understanding why mortgages cost so much more than the sticker price, and what actually helps reduce the total.",
+        ],
+      },
+      {
+        heading: "The payment formula",
+        paragraphs: [
+          "M = P × [r × (1 + r)ⁿ] / [(1 + r)ⁿ − 1]",
+          "P is the loan amount, r is the monthly interest rate (annual rate ÷ 12), and n is the number of monthly payments. It's the same amortization formula behind the EMI on any fixed-rate loan, which is why our EMI and mortgage calculators agree.",
+        ],
+      },
+      {
+        heading: "A worked example",
+        paragraphs: [
+          "Borrow $300,000 at 6.5% over 30 years: r = 0.065 ÷ 12 ≈ 0.005417 and n = 360. That gives a monthly payment of about $1,896. Over 360 payments you'd pay roughly $682,600 in total — meaning about $382,600 of it is interest, more than the amount you borrowed.",
+        ],
+      },
+      {
+        heading: "Why the first payments are almost all interest",
+        paragraphs: [
+          "Each month's interest is the monthly rate times the remaining balance. In month one, that's $300,000 × 0.005417 ≈ $1,625 of the $1,896 payment, leaving only about $271 to reduce the principal. As the balance falls, the interest portion shrinks and the principal portion grows, even though the total payment never changes. That's the shape of an amortization schedule: interest-heavy at the start, principal-heavy at the end.",
+        ],
+      },
+      {
+        heading: "15 years vs 30 years",
+        paragraphs: [
+          "At the same 6.5% rate, a 15-year term on the same $300,000 has a payment of about $2,613 a month — roughly $717 more than the 30-year payment — but total interest drops to about $170,000, less than half of the 30-year figure. In practice, shorter terms also tend to come with lower rates, widening the gap further. The trade-off is monthly cash flow against total cost.",
+        ],
+      },
+      {
+        heading: "What actually reduces total interest",
+        paragraphs: ["Three levers do most of the work:"],
+        list: [
+          "A larger down payment — borrow less, pay less interest on every month's balance.",
+          "A shorter term — higher payment, much lower total interest.",
+          "Extra principal payments — because interest is calculated on the remaining balance, any extra amount applied early reduces every later month's interest, and the earlier it's paid, the more it saves.",
+        ],
+      },
+      {
+        heading: "What the payment formula leaves out",
+        paragraphs: [
+          "The formula covers principal and interest only. Property taxes, homeowners insurance, and any association dues are billed on top, so your real monthly housing cost will be higher than the figure the formula gives. Budget with all of them included.",
+        ],
+      },
+      {
+        heading: "See your own schedule",
+        paragraphs: [
+          "Our Mortgage Payment Calculator updates as you change the home price, down payment, rate, and term, and shows the month-by-month amortization breakdown — handy for testing how much an extra payment or a shorter term would really save.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-many-calories-should-you-eat",
+    title: "How Many Calories Should You Eat? BMR, TDEE, and the Math Behind It",
+    description:
+      "How the Mifflin-St Jeor equation estimates your BMR, how activity level turns it into TDEE, and how to use the number for weight loss or gain without overtrusting it.",
+    date: "2026-10-05",
+    category: "Health",
+    readingTime: "6 min read",
+    relatedCalculator: { slug: "calorie-calculator", label: "Calorie Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "Every calorie target you see online starts from the same two numbers: how much energy your body burns at rest, and how much more it burns because you move around. Knowing how those are estimated tells you how far to trust the result — and how to adjust it from real-world feedback.",
+        ],
+      },
+      {
+        heading: "Step 1: BMR, your resting burn",
+        paragraphs: [
+          "Basal Metabolic Rate (BMR) is the energy your body uses at complete rest just to keep you alive — breathing, circulation, temperature control. One of the most widely used estimates is the Mifflin-St Jeor equation:",
+          "Men: BMR = 10 × weight (kg) + 6.25 × height (cm) − 5 × age + 5",
+          "Women: BMR = 10 × weight (kg) + 6.25 × height (cm) − 5 × age − 161",
+          "For a 30-year-old man who weighs 75 kg and is 175 cm tall: 750 + 1,093.75 − 150 + 5 ≈ 1,699 calories a day at rest.",
+        ],
+      },
+      {
+        heading: "Step 2: TDEE, your real daily burn",
+        paragraphs: [
+          "Total Daily Energy Expenditure (TDEE) multiplies BMR by an activity factor:",
+        ],
+        list: [
+          "Sedentary (little or no exercise): ×1.2",
+          "Lightly active (light exercise 1–3 days a week): ×1.375",
+          "Moderately active (3–5 days a week): ×1.55",
+          "Very active (6–7 days a week): ×1.725",
+          "Extra active (hard daily training or a physical job): ×1.9",
+        ],
+      },
+      {
+        heading: "Putting the two together",
+        paragraphs: [
+          "The same man, moderately active: 1,699 × 1.55 ≈ 2,633 calories a day to maintain his weight. Lightly active, it's about 2,336. That gap of nearly 300 calories from a single wrong guess about activity is why people so often land on a target that doesn't match their results — overestimating activity is the most common error.",
+        ],
+      },
+      {
+        heading: "Turning maintenance into a goal",
+        paragraphs: [
+          "A common rule of thumb is that about 3,500 calories equals roughly one pound (0.45 kg) of body fat, so a daily deficit of around 500 calories works out to about a pound lost per week, and a similar surplus to about a pound gained. It's an approximation, not a law — the body adapts, water weight fluctuates, and the real rate drifts over time. Treat it as a starting estimate to adjust from.",
+        ],
+      },
+      {
+        heading: "Use it as a starting point, then adjust",
+        paragraphs: [
+          "The equation is validated for most healthy adults, but individual metabolism varies with muscle mass, genetics, and health conditions. The practical approach is to eat at your estimated target for two to three weeks, track what the scale and your energy levels actually do, and nudge the target up or down based on that real data rather than the formula alone.",
+        ],
+      },
+      {
+        heading: "When to see a professional",
+        paragraphs: [
+          "Calculators are informational, not medical advice. If you're pregnant, managing a health condition, recovering from an eating disorder, or planning a large change in weight, a doctor or registered dietitian can set a target that accounts for things a formula can't see.",
+        ],
+      },
+      {
+        heading: "Get your own number",
+        paragraphs: [
+          "Our Calorie Calculator applies the Mifflin-St Jeor equation to your age, height, weight, and activity level, and shows your BMR, maintenance calories, and targets for weight loss or gain.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "llm-context-windows-explained",
+    title: "LLM Context Windows Explained: Why Long Conversations Get Expensive",
+    description:
+      "What a context window is, how conversation history quietly multiplies your token costs, and practical ways to stay under the limit.",
+    date: "2026-10-05",
+    category: "AI",
+    readingTime: "5 min read",
+    relatedCalculator: { slug: "context-window-calculator", label: "Context Window Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "A model's context window is the maximum amount of text — measured in tokens — it can consider in a single request. Everything has to fit inside it: your instructions, any documents you attach, the conversation so far, and the answer the model is about to write. Understanding how that space gets used explains both why long chats hit limits and why they get costly.",
+        ],
+      },
+      {
+        heading: "What counts against the window",
+        paragraphs: ["Four things share the same budget:"],
+        list: [
+          "The system prompt and any standing instructions",
+          "Documents, search results, or other context you include",
+          "The full conversation history sent with each new message",
+          "The response itself — you need to leave room for the model's output",
+        ],
+      },
+      {
+        heading: "Why conversation costs grow faster than you expect",
+        paragraphs: [
+          "Chat APIs are stateless: to continue a conversation, you resend the earlier turns with every new message. So the input tokens on each turn include everything said so far.",
+          "Say each turn adds about 500 tokens. On turn 1 you send 500 tokens, on turn 2 about 1,000, on turn 10 about 5,000. Over a 20-turn conversation, the total input tokens you pay for is roughly 500 × (1 + 2 + … + 20) = 105,000 — more than ten times the 10,000 tokens of genuinely new content. Cost grows roughly with the square of the conversation length, not in a straight line.",
+        ],
+      },
+      {
+        heading: "What happens when you exceed the limit",
+        paragraphs: [
+          "Depending on the API, the request either fails outright or the oldest content is silently dropped to make room. Neither is good — a failed request breaks the user experience, and silently dropped history can make the model forget instructions or facts you were relying on without any visible error.",
+        ],
+      },
+      {
+        heading: "Bigger windows aren't automatically better",
+        paragraphs: [
+          "A larger window lets you fit more, but it doesn't guarantee the model uses everything equally well. Models can lose track of details buried in the middle of very long inputs, and a bigger window also means a bigger bill if you fill it. Match the window to what the task needs, not to the largest available.",
+        ],
+      },
+      {
+        heading: "How to stay under budget",
+        paragraphs: ["The same few techniques cover most cases:"],
+        list: [
+          "Summarize or drop older turns once they're no longer needed.",
+          "Retrieve only the relevant passages (retrieval-augmented generation) instead of pasting whole documents every turn.",
+          "Keep repeated content — system prompts, reference text — identical and at the start of the request so it can benefit from prompt caching where the provider offers it.",
+          "Cap the maximum response length so the output doesn't consume budget you didn't plan for.",
+        ],
+      },
+      {
+        heading: "Check how much of the window you're using",
+        paragraphs: [
+          "Our Context Window Calculator shows how much of a model's window your content uses, how much budget remains, and roughly how many more messages will fit — a useful check before you ship a feature that sends long histories.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "rag-cost-breakdown",
+    title: "What Does a RAG Pipeline Actually Cost? Indexing, Retrieval, and Generation",
+    description:
+      "The three cost components of a retrieval-augmented generation system, a worked per-query example, and why retrieved context is usually the biggest lever.",
+    date: "2026-10-05",
+    category: "AI",
+    readingTime: "6 min read",
+    relatedCalculator: { slug: "rag-cost-calculator", label: "RAG Cost Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "Retrieval-augmented generation (RAG) lets a language model answer questions using your own documents by fetching the relevant passages and including them in the prompt. It's a popular architecture, but its cost is spread across several places, and the biggest one isn't the one most teams budget for first.",
+        ],
+      },
+      {
+        heading: "The three cost components",
+        paragraphs: ["A RAG system's bill comes from three separate places:"],
+        list: [
+          "Indexing — converting your documents into embeddings once (and again whenever they change). This is a one-time or periodic cost that scales with the size of your corpus.",
+          "Query embedding — embedding each user question so it can be matched against the index. It's tiny per query, because questions are short.",
+          "Generation — the language model call that writes the answer from the retrieved context. This is almost always the dominant ongoing cost.",
+        ],
+      },
+      {
+        heading: "Why generation dominates, and why retrieved context is the lever",
+        paragraphs: [
+          "Every chunk you retrieve is added to the model's input. Retrieve 5 chunks of 300 tokens each and you've added 1,500 input tokens to every single query — on top of the user's question and your system prompt. Output tokens also cost more per token than input tokens, but it's usually the retrieved context that makes the input side large.",
+        ],
+      },
+      {
+        heading: "A worked per-query example",
+        paragraphs: [
+          "The prices below are illustrative, to show the structure of the calculation — substitute your provider's current rates.",
+          "Assume input tokens cost $3 per million and output tokens $15 per million. One query sends about 1,750 input tokens (1,500 of retrieved context + 200 of system prompt + 50 for the question) and gets a 300-token answer.",
+        ],
+        list: [
+          "Input: 1,750 × $3 ÷ 1,000,000 ≈ $0.00525",
+          "Output: 300 × $15 ÷ 1,000,000 = $0.0045",
+          "Total ≈ $0.00975 per query, or about $97.50 a day at 10,000 queries a day",
+        ],
+      },
+      {
+        heading: "What changing one setting does",
+        paragraphs: [
+          "Retrieve 3 chunks instead of 5 and the input drops to about 1,150 tokens. The per-query cost falls to roughly $0.00795 — around 18% lower — from a one-line configuration change, and whether answer quality holds up is something you can test directly. That's why the number of chunks retrieved and the chunk size are the first knobs to examine.",
+        ],
+      },
+      {
+        heading: "Indexing is usually the cheap part",
+        paragraphs: [
+          "Embedding models are priced far lower than generation models. Embedding a 10-million-token corpus at an illustrative $0.10 per million tokens costs about $1. It only becomes meaningful with very large or very frequently changing corpora — which is why re-indexing only when documents actually change, instead of on a fixed schedule, is a sensible habit.",
+        ],
+      },
+      {
+        heading: "What's not in the token math",
+        paragraphs: [
+          "The vector database that stores your embeddings isn't billed per token. Managed services charge for storage and queries, and self-hosting has its own infrastructure cost. Add that to the model costs for a realistic total.",
+        ],
+      },
+      {
+        heading: "Ways to reduce cost without hurting quality",
+        paragraphs: ["The usual levers, roughly in order of impact:"],
+        list: [
+          "Retrieve fewer or smaller chunks, and test that answers stay good.",
+          "Use a smaller, cheaper model for straightforward questions.",
+          "Keep the system prompt identical between calls so prompt caching can discount it.",
+          "Re-index only when the underlying content changes.",
+        ],
+      },
+      {
+        heading: "Estimate your own pipeline",
+        paragraphs: [
+          "Our RAG Cost Calculator takes your corpus size, retrieval settings, and query volume and breaks the estimate into indexing, query embedding, and generation — so you can see which part of your own pipeline is driving the spend.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "single-page-website-vs-multi-page",
+    title: "Single-Page Website vs Multi-Page: Which Is Right for Your Business?",
+    description:
+      "When a one-page website is the smarter choice, where it limits your SEO, and the hybrid approach that gets the best of both.",
+    date: "2026-10-05",
+    category: "Web Development",
+    readingTime: "5 min read",
+    sections: [
+      {
+        paragraphs: [
+          "A single-page website puts everything — your offer, proof, pricing, and contact details — on one long, scrolling page. It's fast to build, easy to maintain, and often more persuasive than a sprawling site. But it isn't right for every business, and the SEO trade-offs are the part most people overlook.",
+        ],
+      },
+      {
+        heading: "When a single page works well",
+        paragraphs: ["It's a strong fit when the goal is narrow and the story is short:"],
+        list: [
+          "A landing page for one product, offer, or campaign.",
+          "A personal portfolio or a small business with a handful of services.",
+          "An event, launch, or waitlist page where one clear call to action matters most.",
+          "A first version you want live quickly, before investing in a larger site.",
+        ],
+      },
+      {
+        heading: "Why it can convert better",
+        paragraphs: [
+          "A single page controls the narrative: visitors move through a deliberate sequence — problem, solution, proof, action — without wandering off to a menu of other pages. Fewer choices usually means a clearer path to the one action you want, and a lean page is easier to keep fast on mobile connections, which helps both users and search rankings.",
+        ],
+      },
+      {
+        heading: "Where it limits your SEO",
+        paragraphs: [
+          "Search engines rank pages, and a single-page site gives you exactly one URL to rank. That one page has to target everything you offer, which dilutes focus — it's hard for one page to rank well for several unrelated search topics at once. You also have fewer places to earn links, fewer title tags and descriptions to tailor, and less room for the depth of content that long-tail searches reward.",
+        ],
+      },
+      {
+        heading: "When you need multiple pages",
+        paragraphs: [
+          "Move to a multi-page structure when you have distinct services or products that people search for separately, when you want to publish guides or articles that attract search traffic, or when you need separate legal, pricing, or location pages. A page per topic lets each one target its own search intent with its own title, description, and content.",
+        ],
+      },
+      {
+        heading: "The hybrid approach",
+        paragraphs: [
+          "Many sites do best with a focused single-page homepage that covers the core offer, plus separate pages for what genuinely needs its own URL — a blog, individual service pages, and policy pages. You keep the clarity of one persuasive page while giving search engines more to index and more ways to find you.",
+        ],
+      },
+      {
+        heading: "Technical basics that matter either way",
+        paragraphs: ["Whichever structure you choose, a few fundamentals carry the SEO load:"],
+        list: [
+          "A unique, descriptive title and meta description for every page.",
+          "A canonical URL and a sitemap submitted to search engines.",
+          "Clean heading structure — one H1, with sections marked by H2s.",
+          "Fast loading and a layout that works properly on phones.",
+          "Structured data where it fits, so search engines understand the content.",
+        ],
+      },
+      {
+        heading: "Need one built?",
+        paragraphs: [
+          "Single-page websites are one of the services we build. If you're deciding between one page and several, or want help setting up the SEO basics properly from the start, get in touch via the contact page and we can talk through what fits your business.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {
