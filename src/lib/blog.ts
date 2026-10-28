@@ -877,6 +877,626 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "how-to-pay-off-a-loan-faster",
+    title: "How to Pay Off a Loan Faster: What Extra Payments Really Save",
+    description:
+      "A worked example of how small extra payments shorten a loan and cut total interest, plus when prepaying makes sense and when it doesn't.",
+    date: "2026-10-28",
+    category: "Finance",
+    readingTime: "5 min read",
+    relatedCalculator: { slug: "loan-calculator", label: "Loan Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "On a long loan, most of your early payments go to interest rather than the amount you borrowed. That's why even modest extra payments make a surprisingly large difference: every extra rupee or dollar goes straight against the principal, so the interest that would have been charged on it in every future month simply never exists.",
+        ],
+      },
+      {
+        heading: "A worked example",
+        paragraphs: [
+          "Take a $200,000 loan at 6% annual interest over 30 years. The standard monthly payment is about $1,199.10, and over the full term you'd pay roughly $231,700 in interest — more than the amount you borrowed.",
+          "Now add a fixed extra amount to every payment:",
+        ],
+        list: [
+          "Extra $100 a month: the loan is cleared in about 24 years 7 months instead of 30, and total interest falls by roughly $49,000.",
+          "Extra $200 a month: the loan is cleared in about 21 years, and total interest falls by roughly $80,000.",
+        ],
+      },
+      {
+        heading: "Why the savings are so large",
+        paragraphs: [
+          "Interest is calculated on the outstanding balance. Reduce the balance sooner and every later month's interest is smaller, which leaves more of the regular payment to reduce principal, which shrinks the balance further. The effect compounds in your favour — and it's strongest when the extra payments happen early in the loan, when the balance is highest.",
+        ],
+      },
+      {
+        heading: "Ways to pay extra",
+        paragraphs: ["You don't need a windfall. Common approaches:"],
+        list: [
+          "Round your payment up to a fixed higher figure.",
+          "Make one extra payment a year, for example from a bonus.",
+          "Increase your payment whenever your income rises.",
+          "Switch to a shorter term when you refinance, if the higher payment is comfortable.",
+        ],
+      },
+      {
+        heading: "When prepaying isn't the best use of money",
+        paragraphs: [
+          "Paying down a loan gives a guaranteed return equal to its interest rate, which is attractive for high-rate debt like credit cards and personal loans. For a low-rate loan, you may do better building an emergency fund first or investing, depending on your risk comfort. Also check your loan terms: some lenders charge prepayment penalties or fees, and in some countries the interest on certain loans (like home loans) carries tax benefits that change the maths.",
+        ],
+      },
+      {
+        heading: "Make sure the extra goes to principal",
+        paragraphs: [
+          "Tell your lender explicitly that extra amounts should be applied to principal rather than held toward your next scheduled payment. Otherwise a lender may treat the extra as an early payment and the interest saving won't happen.",
+        ],
+      },
+      {
+        heading: "Run your own numbers",
+        paragraphs: [
+          "Our Loan Calculator shows your payment, total interest, and the breakdown for your own amount, rate, and term, so you can compare a few extra-payment scenarios before deciding what's realistic for your budget.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "recurring-deposit-how-it-works",
+    title: "How a Recurring Deposit Works: Maturity Amount Explained",
+    description:
+      "How monthly RD instalments grow with compounding, a worked maturity example, and the mistakes that reduce what you actually receive.",
+    date: "2026-10-28",
+    category: "Finance",
+    readingTime: "5 min read",
+    relatedCalculator: { slug: "rd-calculator", label: "RD Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "A recurring deposit (RD) is a savings product where you deposit a fixed amount every month for a fixed period, and the bank pays a guaranteed interest rate. It suits people who prefer building a lump sum from regular income rather than depositing a large amount at once.",
+        ],
+      },
+      {
+        heading: "Why each instalment earns different interest",
+        paragraphs: [
+          "Unlike a fixed deposit, where the full amount is invested from day one, an RD grows in pieces. The first instalment stays invested for the whole tenure, the second for one month less, and so on — the last one earns almost nothing. Banks typically compound RD interest quarterly, so the maturity amount is the sum of every instalment grown for the time it was actually invested.",
+        ],
+      },
+      {
+        heading: "A worked example",
+        paragraphs: [
+          "Deposit ₹5,000 a month for 5 years (60 instalments) at 7% a year, compounded quarterly. You invest ₹3,00,000 in total. The maturity value comes to roughly ₹3,59,700, which means about ₹59,700 is interest.",
+          "Treat that as an estimate: banks differ slightly in how they count the days an instalment is invested and how they round, so the figure on your own deposit receipt may vary by a small amount.",
+        ],
+      },
+      {
+        heading: "RD versus FD",
+        paragraphs: [
+          "Both pay a fixed rate with no market risk. An FD makes sense when you already have a lump sum. An RD makes sense when you're saving from monthly income. Because an RD's money is invested for less time on average, the total interest earned is lower than an FD of the same total amount — the trade-off is the discipline and accessibility of small monthly amounts.",
+        ],
+      },
+      {
+        heading: "Mistakes that cost you",
+        paragraphs: ["A few things reduce what you actually get:"],
+        list: [
+          "Missing instalments — banks usually charge a small penalty for each late deposit, and repeated misses can cause the account to be closed early.",
+          "Closing early — premature closure typically lowers the interest rate that applies.",
+          "Ignoring tax — RD interest is taxable at your income tax slab rate, and TDS may be deducted when interest crosses the bank's threshold.",
+        ],
+      },
+      {
+        heading: "Estimate your maturity amount",
+        paragraphs: [
+          "Our RD Calculator takes your monthly instalment, interest rate, and tenure and shows the maturity value and interest earned. It's a quick way to decide how large an instalment you need to hit a savings goal by a given date.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-to-calculate-roi",
+    title: "How to Calculate ROI (and Why Annualised ROI Matters)",
+    description:
+      "The ROI formula, a worked example, and why comparing investments needs an annualised figure rather than a headline percentage.",
+    date: "2026-10-28",
+    category: "Finance",
+    readingTime: "4 min read",
+    relatedCalculator: { slug: "roi-calculator", label: "ROI Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "Return on investment (ROI) answers a simple question: for every unit of money you put in, how much did you get back? It's used for everything from stocks and property to marketing campaigns and software purchases, which is exactly why it's easy to misuse.",
+        ],
+      },
+      {
+        heading: "The formula",
+        paragraphs: [
+          "ROI = (final value − initial investment) ÷ initial investment × 100",
+          "If you put in 12,000 and it grows to 15,000, the gain is 3,000 and the ROI is 3,000 ÷ 12,000 = 25%.",
+        ],
+      },
+      {
+        heading: "The catch: ROI ignores time",
+        paragraphs: [
+          "A 25% ROI sounds good, but the time it took matters enormously. If that 25% arrived in one year, it's an excellent return. If it took ten years, it's modest — less than 3% a year on average. A raw ROI percentage can't tell those two cases apart.",
+        ],
+      },
+      {
+        heading: "Annualised ROI",
+        paragraphs: [
+          "To compare investments held for different lengths of time, convert the result to an annual rate: annualised ROI = (final ÷ initial)^(1 ÷ years) − 1.",
+          "For the same 25% total return earned over 3 years, that's 1.25^(1/3) − 1 ≈ 7.7% a year. Now you can set it directly against a savings account rate or another investment.",
+        ],
+      },
+      {
+        heading: "Common ways ROI misleads",
+        paragraphs: ["Watch for these when someone quotes you an ROI figure:"],
+        list: [
+          "Costs left out — fees, taxes, maintenance, and your own time all reduce the real return.",
+          "No time period — always ask how long it took.",
+          "Risk ignored — a high ROI from a risky bet isn't comparable to a modest, steady one.",
+          "Selective examples — one successful campaign or trade doesn't show a typical outcome.",
+        ],
+      },
+      {
+        heading: "Where ROI is most useful",
+        paragraphs: [
+          "ROI works well as a quick first filter for business decisions — whether a tool, campaign, or hire pays for itself — as long as you include all the costs and the time horizon. For long investments, pair it with the annualised figure.",
+        ],
+      },
+      {
+        heading: "Calculate it",
+        paragraphs: [
+          "Our ROI Calculator takes your initial investment, final value, and time period, and returns the total ROI and the annualised rate, so you can compare options on equal footing.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "ctc-vs-in-hand-salary",
+    title: "CTC vs In-Hand Salary: Why Your Take-Home Is Lower",
+    description:
+      "What a cost-to-company figure includes, which deductions reduce your monthly pay, and how to estimate your real take-home before accepting an offer.",
+    date: "2026-10-28",
+    category: "Finance",
+    readingTime: "5 min read",
+    relatedCalculator: { slug: "salary-calculator", label: "Salary Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "A job offer is usually stated as CTC — cost to company — which is the total amount the employer spends on you in a year. That's not the amount that lands in your bank account each month, and the gap often surprises people who compare offers on the headline number alone.",
+        ],
+      },
+      {
+        heading: "What CTC typically includes",
+        paragraphs: ["The exact structure varies by employer, but CTC commonly bundles:"],
+        list: [
+          "Fixed pay — basic salary, house rent allowance (HRA), and other allowances.",
+          "Employer's contribution to the provident fund (PF).",
+          "Gratuity provision, which you receive only after completing the qualifying service period.",
+          "Insurance premiums and other benefits paid on your behalf.",
+          "Variable pay or bonuses, which are often paid only if targets are met.",
+        ],
+      },
+      {
+        heading: "What reduces your monthly in-hand pay",
+        paragraphs: [
+          "Starting from the gross monthly figure, several deductions come out before payment:",
+        ],
+        list: [
+          "Your own contribution to the provident fund, commonly set as a percentage of basic salary.",
+          "Income tax deducted at source (TDS), based on your expected annual tax liability.",
+          "Professional tax, where your state charges it.",
+          "Any other deductions such as insurance top-ups or loan recoveries.",
+        ],
+      },
+      {
+        heading: "Why two offers with the same CTC can pay differently",
+        paragraphs: [
+          "Imagine two offers of the same CTC. One has a large variable component that is not guaranteed, and the other pays almost everything as fixed salary. The second gives a higher and more predictable monthly amount. Likewise, a higher basic salary raises PF and gratuity contributions, which increases your long-term savings but lowers your monthly take-home.",
+        ],
+      },
+      {
+        heading: "Questions to ask before accepting",
+        paragraphs: ["A few questions give you a much clearer picture:"],
+        list: [
+          "What portion is fixed and what portion is variable, and how reliably is the variable paid?",
+          "Is the PF contribution calculated on the full basic salary or a capped amount?",
+          "Which benefits (insurance, allowances) are included in CTC and what are they worth to you?",
+          "Is the tax regime chosen by default, and can you change it?",
+        ],
+      },
+      {
+        heading: "Estimate your take-home",
+        paragraphs: [
+          "Our Salary Calculator turns an annual figure into an estimated monthly breakdown so you can compare offers on take-home rather than CTC. Treat the result as an estimate — your payslip depends on your employer's salary structure and your declared tax details.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "ovulation-and-fertile-window-explained",
+    title: "Ovulation and the Fertile Window: How the Dates Are Estimated",
+    description:
+      "How ovulation is predicted from your cycle length, what the fertile window is, and why a calculator can only ever give an estimate.",
+    date: "2026-10-28",
+    category: "Health",
+    readingTime: "5 min read",
+    relatedCalculator: { slug: "ovulation-calculator", label: "Ovulation Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "Ovulation is the point in the menstrual cycle when an ovary releases an egg. Knowing roughly when it happens helps people who are trying to conceive plan, and helps others understand their cycle. The important word is roughly — the date is an estimate, not a certainty.",
+        ],
+      },
+      {
+        heading: "How the estimate works",
+        paragraphs: [
+          "The phase between ovulation and your next period (the luteal phase) is fairly consistent from cycle to cycle, usually around 12 to 16 days and often close to 14. Because it's the more stable part, ovulation is estimated by counting back about 14 days from when your next period is expected, rather than counting forward from the last one.",
+          "For a typical 28-day cycle that gives ovulation around day 14. For a 30-day cycle it's around day 16, and for a 35-day cycle around day 21. This is why a longer cycle doesn't mean ovulation happens on day 14.",
+        ],
+      },
+      {
+        heading: "The fertile window",
+        paragraphs: [
+          "Pregnancy is possible in the days leading up to ovulation, not just on the day itself, because sperm can survive in the body for up to about five days. The egg survives for roughly a day after release. The fertile window is therefore usually described as the five days before ovulation plus the day of ovulation — about six days in total.",
+        ],
+      },
+      {
+        heading: "Why it's only an estimate",
+        paragraphs: [
+          "A calculator assumes your cycle is regular and that you know its typical length. In practice, stress, illness, travel, breastfeeding, and conditions such as PCOS can shift ovulation, and cycles can vary from month to month. If your cycles are irregular, a calendar-based estimate may be well off.",
+        ],
+      },
+      {
+        heading: "Signs that can help confirm it",
+        paragraphs: ["Some people combine the calendar estimate with body signals:"],
+        list: [
+          "Cervical mucus that becomes clear, slippery, and stretchy around ovulation.",
+          "A small, sustained rise in basal body temperature after ovulation has occurred.",
+          "Positive results on ovulation predictor kits, which detect the hormone surge that precedes ovulation.",
+        ],
+      },
+      {
+        heading: "Important to know",
+        paragraphs: [
+          "An ovulation calculator is not a contraception method and shouldn't be relied on to prevent pregnancy. If you've been trying to conceive for a year without success (six months if you're over 35), or your cycles are very irregular or absent, speak to a doctor — this guide is general information, not medical advice.",
+        ],
+      },
+      {
+        heading: "Try the calculator",
+        paragraphs: [
+          "Our Ovulation Calculator takes your last period date and cycle length and shows the estimated ovulation day and fertile window, which you can use as a starting point for tracking.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "what-are-tokens-in-ai",
+    title: "What Are Tokens in AI? How Text Becomes Cost",
+    description:
+      "How language models split text into tokens, a rule of thumb for estimating counts, and why token counts drive both pricing and context limits.",
+    date: "2026-10-28",
+    category: "AI",
+    readingTime: "5 min read",
+    relatedCalculator: { slug: "token-counter", label: "Token Counter" },
+    sections: [
+      {
+        paragraphs: [
+          "Language models don't read words or letters. They read tokens — chunks of text that a tokenizer produces before the model ever sees the input. Tokens are also the unit that API providers bill in and that context limits are measured in, so understanding them is the foundation for estimating any AI cost.",
+        ],
+      },
+      {
+        heading: "What a token is",
+        paragraphs: [
+          "A token can be a whole common word, a piece of a longer or rarer word, a punctuation mark, or even a space attached to a word. A short, common word like cat is usually one token, while a long or unusual word may be split into several pieces.",
+        ],
+      },
+      {
+        heading: "A useful rule of thumb",
+        paragraphs: [
+          "For ordinary English text, one token is roughly four characters, or about three-quarters of a word. That means:",
+        ],
+        list: [
+          "100 tokens is about 75 words.",
+          "1,000 words is about 1,300 tokens.",
+          "A full page of text (around 500 words) is about 650 tokens.",
+        ],
+      },
+      {
+        heading: "When the rule of thumb breaks down",
+        paragraphs: [
+          "It's an average for English prose, and several kinds of content tokenize less efficiently:",
+        ],
+        list: [
+          "Source code and JSON, with their symbols and structure.",
+          "Many non-English languages, especially those with non-Latin scripts, which can need noticeably more tokens for the same meaning.",
+          "Numbers, URLs, and unusual names.",
+        ],
+      },
+      {
+        heading: "Different models count differently",
+        paragraphs: [
+          "Each model family has its own tokenizer, so the same text can produce different counts on different models. For budgeting, count with the tokenizer of the model you'll actually call, and treat a general estimate as a starting point.",
+        ],
+      },
+      {
+        heading: "Why tokens determine your bill",
+        paragraphs: [
+          "Providers charge per token, typically quoted per million, with separate prices for input tokens (what you send) and output tokens (what the model writes). Output is usually priced higher. Your cost for a request is input tokens times the input rate plus output tokens times the output rate, and your monthly cost is that multiplied by how many requests you make.",
+        ],
+      },
+      {
+        heading: "Why tokens determine what fits",
+        paragraphs: [
+          "A model's context window is also measured in tokens, and it has to hold your instructions, any documents, the conversation so far, and the model's reply. Long inputs can crowd out the answer, which is why counting tokens matters for quality as well as cost.",
+        ],
+      },
+      {
+        heading: "Count your own text",
+        paragraphs: [
+          "Our Token Counter gives you a quick estimate for any text you paste in, so you can size prompts and documents before you put a price on them.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "ai-agent-cost-explained",
+    title: "Why AI Agents Cost More Than You Expect",
+    description:
+      "How multi-step agent loops resend a growing context at every step, a worked cost example, and practical ways to keep agent spending under control.",
+    date: "2026-10-28",
+    category: "AI",
+    readingTime: "6 min read",
+    relatedCalculator: { slug: "ai-agent-cost-calculator", label: "AI Agent Cost Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "A single chatbot reply is one model call. An agent is different: it plans, calls tools, reads the results, and decides what to do next, often across many steps. Each of those steps is a model call you pay for, and the cost grows faster than the number of steps suggests.",
+        ],
+      },
+      {
+        heading: "The hidden multiplier: resending context",
+        paragraphs: [
+          "At every step the model needs the instructions, the task, and everything that has happened so far, including previous tool results. That whole history is sent again as input tokens on the next call. So input grows with each step, and total input across a run grows much faster than the number of steps.",
+        ],
+      },
+      {
+        heading: "A worked example",
+        paragraphs: [
+          "The prices here are illustrative — substitute your provider's current rates. Assume input at $3 per million tokens and output at $15 per million. An agent starts with 2,000 tokens of instructions and task, and each step adds about 800 tokens of tool output to the context. It runs 10 steps and writes about 300 tokens of output per step.",
+        ],
+        list: [
+          "Input across the run: 2,000 + 2,800 + 3,600 + … up to 9,200 tokens on the last step, totalling 56,000 input tokens — nearly three times the 20,000 you'd get by assuming a flat 2,000 per step.",
+          "Input cost: 56,000 × $3 ÷ 1,000,000 ≈ $0.168",
+          "Output cost: 3,000 × $15 ÷ 1,000,000 = $0.045",
+          "Total ≈ $0.21 per run, or about $210 for 1,000 runs",
+        ],
+      },
+      {
+        heading: "What else adds cost",
+        paragraphs: ["Beyond the basic loop, spend rises when:"],
+        list: [
+          "The agent retries failed tool calls or goes down unproductive paths.",
+          "Reasoning models produce long internal thinking that's billed as output.",
+          "Several sub-agents run in parallel, each with its own context.",
+          "Tool results are large and get pasted into context in full.",
+        ],
+      },
+      {
+        heading: "How to keep it under control",
+        paragraphs: ["The most effective levers are about limiting how much context accumulates:"],
+        list: [
+          "Set a maximum number of steps so a stuck agent can't loop indefinitely.",
+          "Summarise or trim old tool output instead of carrying all of it forward.",
+          "Return only the fields a tool result needs, not the full response.",
+          "Use prompt caching for the stable part of the prompt, where your provider supports it.",
+          "Route simple steps to a smaller, cheaper model.",
+        ],
+      },
+      {
+        heading: "Budget with a range, not a number",
+        paragraphs: [
+          "Agent runs vary — some finish in three steps, others in twenty. It's safer to estimate an average and a worst case than to rely on one figure, and to log real token usage per run once you're in production.",
+        ],
+      },
+      {
+        heading: "Estimate your agent's cost",
+        paragraphs: [
+          "Our AI Agent Cost Calculator lets you set the number of steps, tokens per step, and run volume, so you can see how quickly cost scales before you commit to a design.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "fine-tuning-cost-explained",
+    title: "How Much Does Fine-Tuning an AI Model Cost?",
+    description:
+      "How training cost is calculated from dataset size and epochs, what comes on top of training, and when fine-tuning is worth it compared with better prompting.",
+    date: "2026-10-28",
+    category: "AI",
+    readingTime: "5 min read",
+    relatedCalculator: {
+      slug: "ai-fine-tuning-cost-calculator",
+      label: "AI Fine-Tuning Cost Calculator",
+    },
+    sections: [
+      {
+        paragraphs: [
+          "Fine-tuning trains an existing model further on your own examples so it follows a particular style, format, or task more reliably. Hosted fine-tuning services bill mainly by the number of tokens processed during training, which makes the training cost easy to estimate — but it isn't the only cost.",
+        ],
+      },
+      {
+        heading: "How training cost is calculated",
+        paragraphs: [
+          "Training cost = tokens in your dataset × number of epochs × the provider's training price per token. An epoch is one full pass over the dataset, and models are commonly trained for several.",
+          "As an illustration, take a 5-million-token dataset trained for 3 epochs. That's 15 million training tokens. At an illustrative $8 per million tokens, the training cost is about $120. Check your provider's current price before relying on any figure like this.",
+        ],
+      },
+      {
+        heading: "Costs that come on top",
+        paragraphs: ["The training run is often the smaller part of the total:"],
+        list: [
+          "Preparing data — collecting, cleaning, and labelling examples usually takes more effort than the compute.",
+          "Experiments — you'll rarely get the best result on the first run, so budget for several.",
+          "Inference — fine-tuned models are often priced higher per token than the base model, and that applies to every request you make afterwards.",
+          "Evaluation — testing the tuned model against a held-out set to confirm it's actually better.",
+        ],
+      },
+      {
+        heading: "Quality of data beats quantity",
+        paragraphs: [
+          "A few hundred to a few thousand high-quality, consistent examples often beat a much larger noisy dataset. Duplicates and contradictory examples increase cost without improving the result.",
+        ],
+      },
+      {
+        heading: "Do you need fine-tuning at all?",
+        paragraphs: [
+          "Before paying for it, check whether simpler options solve the problem. Clearer instructions, a few examples in the prompt, or retrieval of relevant documents handle many cases at no training cost. Fine-tuning tends to pay off when you need a consistent output format or tone at high volume, or want a smaller, cheaper model to match a larger model's quality on one narrow task.",
+        ],
+      },
+      {
+        heading: "Estimate your run",
+        paragraphs: [
+          "Our AI Fine-Tuning Cost Calculator takes your dataset size, epochs, and training price and returns the training cost, so you can compare it with the savings you expect at inference.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "self-hosting-llm-gpu-vs-api",
+    title: "Self-Hosting an LLM: GPU Cost vs Paying per API Token",
+    description:
+      "How to compare renting GPUs against a pay-per-token API, the break-even maths, and the hidden costs of running models yourself.",
+    date: "2026-10-28",
+    category: "AI",
+    readingTime: "6 min read",
+    relatedCalculator: { slug: "gpu-cost-calculator", label: "GPU Cost Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "An API charges you for each token you use and nothing when idle. A GPU you rent or buy costs the same whether it's busy or not. That one difference decides most self-hosting questions: self-hosting only wins when you keep the hardware busy enough.",
+        ],
+      },
+      {
+        heading: "Step 1: price the always-on GPU",
+        paragraphs: [
+          "Start with the hourly price of the GPU you need, multiplied by the hours it runs. At an illustrative $2 an hour, one GPU running around the clock for 30 days costs $2 × 24 × 30 = $1,440 a month. A model that needs several GPUs multiplies that accordingly.",
+        ],
+      },
+      {
+        heading: "Step 2: find the break-even volume",
+        paragraphs: [
+          "Divide the monthly GPU cost by the API's price per token to see how many tokens the API would have to process to cost the same. If a comparable hosted model costs a blended $2 per million tokens, $1,440 buys 720 million tokens a month on the API. Below that volume the API is cheaper; above it, a well-utilised GPU may be.",
+          "These prices are illustrative — substitute real quotes from your provider and the API you're comparing against.",
+        ],
+      },
+      {
+        heading: "Utilisation is the catch",
+        paragraphs: [
+          "That break-even assumes the GPU can actually process that many tokens. Real throughput depends on the model size, how well requests are batched, and how steadily traffic arrives. Spiky or low traffic leaves the GPU idle while you still pay for it, which is the usual reason self-hosting turns out more expensive than expected.",
+        ],
+      },
+      {
+        heading: "Costs people forget",
+        paragraphs: ["Beyond the GPU rental itself, count:"],
+        list: [
+          "Engineering time to deploy, monitor, scale, and update the model.",
+          "Storage, networking, and redundancy so a single failure doesn't take you offline.",
+          "The gap in quality between an open model you can host and the best hosted models for your task.",
+          "Idle capacity you keep for peak load.",
+        ],
+      },
+      {
+        heading: "When self-hosting makes sense",
+        paragraphs: [
+          "It's most compelling with high, steady volume; strict data-residency or privacy requirements; or a need to customise the model deeply. For prototypes, uneven traffic, or small teams, paying per token is usually simpler and cheaper — and you can revisit the decision as volume grows.",
+        ],
+      },
+      {
+        heading: "Compare your own numbers",
+        paragraphs: [
+          "Our GPU Cost Calculator estimates the monthly cost of running GPUs for your hours and count, which you can set against your expected API bill to find your own break-even point.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "technical-seo-checklist-small-business-website",
+    title: "A Technical SEO Checklist for a Small Business Website",
+    description:
+      "The practical technical SEO basics — titles, canonicals, sitemaps, speed, mobile, and structured data — that help a small site get found and indexed.",
+    date: "2026-10-28",
+    category: "Web Development",
+    readingTime: "6 min read",
+    sections: [
+      {
+        paragraphs: [
+          "Good content can't rank if search engines can't find, read, and understand your pages. Technical SEO is the groundwork that makes that possible. The checklist below covers the fundamentals for a small business website, in roughly the order worth tackling them.",
+        ],
+      },
+      {
+        heading: "1. Make sure pages can be crawled and indexed",
+        paragraphs: ["Start by confirming search engines are allowed in and can find everything:"],
+        list: [
+          "Publish a robots.txt that doesn't accidentally block important pages.",
+          "Create an XML sitemap listing your public pages and submit it in Google Search Console.",
+          "Link every important page from somewhere else on your site, so crawlers can reach it.",
+          "Check the Pages report in Search Console to see what is indexed and why anything isn't.",
+        ],
+      },
+      {
+        heading: "2. One URL per page",
+        paragraphs: [
+          "If the same page is reachable at several addresses — with and without www, with a trailing slash, or over HTTP and HTTPS — search engines may split their attention between the copies. Choose one preferred version, redirect the others to it, and add a canonical tag on each page pointing to its preferred URL.",
+        ],
+      },
+      {
+        heading: "3. Unique titles and descriptions",
+        paragraphs: [
+          "Every page needs its own title tag and meta description that describe what is on that page. Titles are a strong ranking signal and appear as the blue link in results, so keep them clear and reasonably short; descriptions don't affect ranking directly but influence whether people click. Avoid repeating the same text across pages.",
+        ],
+      },
+      {
+        heading: "4. Clean heading structure",
+        paragraphs: [
+          "Use one H1 that states the page's topic, and break the content into sections with H2s and, where needed, H3s. Headings help both readers and search engines understand how the content is organised.",
+        ],
+      },
+      {
+        heading: "5. Speed and Core Web Vitals",
+        paragraphs: [
+          "Google measures real-world experience through Core Web Vitals. The commonly cited targets for a good experience are:",
+        ],
+        list: [
+          "Largest Contentful Paint (loading) of 2.5 seconds or less.",
+          "Interaction to Next Paint (responsiveness) of 200 milliseconds or less.",
+          "Cumulative Layout Shift (visual stability) of 0.1 or less.",
+        ],
+      },
+      {
+        heading: "6. Mobile-friendly layout",
+        paragraphs: [
+          "Google primarily uses the mobile version of your pages for indexing. Make sure text is readable without zooming, tap targets aren't cramped, and nothing scrolls sideways on a phone. Test on a real device, not only in a desktop browser.",
+        ],
+      },
+      {
+        heading: "7. Structured data",
+        paragraphs: [
+          "Structured data (schema.org markup in JSON-LD) tells search engines explicitly what a page is — an organisation, an article, a product, a local business. It can make results eligible for richer displays, though it never guarantees them. Add only markup that matches content actually visible on the page.",
+        ],
+      },
+      {
+        heading: "8. Images and links",
+        paragraphs: [
+          "Give meaningful images descriptive alt text, compress them so they don't slow the page, and use descriptive link text rather than click here. Fix or redirect broken links so visitors and crawlers don't hit dead ends.",
+        ],
+      },
+      {
+        heading: "Then keep publishing",
+        paragraphs: [
+          "Technical SEO removes obstacles; it doesn't create demand. Pair it with genuinely useful pages and guides that answer what your customers search for. If you'd like help setting up the technical foundations on a new or existing site, get in touch through the contact page.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {
