@@ -1497,6 +1497,681 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "flat-vs-reducing-balance-interest-rate",
+    title: "Flat vs Reducing Balance Interest Rate: The Loan Trap to Avoid",
+    description:
+      "Why a flat 9% loan costs far more than a reducing-balance 9% loan, with a worked example and the effective rate you're really paying.",
+    date: "2026-10-28",
+    category: "Finance",
+    readingTime: "5 min read",
+    relatedCalculator: { slug: "emi-calculator", label: "EMI Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "Two lenders can both advertise 9% interest and charge you very different amounts. The difference is how the rate is applied — flat or on a reducing balance — and it's one of the most common ways borrowers end up paying more than they expected.",
+        ],
+      },
+      {
+        heading: "How each method works",
+        paragraphs: [
+          "Reducing balance: interest each month is charged only on the principal still outstanding. As you repay, the balance falls and so does the interest. Most home loans, car loans, and bank personal loans work this way, and it's what the standard EMI formula assumes.",
+          "Flat rate: interest is calculated on the original loan amount for the entire term, no matter how much you've already repaid. The total interest is simply principal × rate × years, and it's spread evenly across the instalments.",
+        ],
+      },
+      {
+        heading: "A worked comparison",
+        paragraphs: ["Borrow ₹10,00,000 for 5 years at a quoted 9%."],
+        list: [
+          "Flat rate: interest = 10,00,000 × 9% × 5 = ₹4,50,000. Total repayable ₹14,50,000, so the instalment is about ₹24,167 a month.",
+          "Reducing balance: the EMI is about ₹20,758 a month. Total repayable is about ₹12,45,500, so interest is roughly ₹2,45,500.",
+        ],
+      },
+      {
+        heading: "The effective rate",
+        paragraphs: [
+          "The flat loan costs about ₹2,04,500 more in interest on the same 9% headline. Because you're repaying principal every month yet still being charged interest on the full original amount, a flat 9% loan works out to an effective reducing-balance rate of roughly 15.7% a year. Flat rates are often quoted precisely because they look lower.",
+        ],
+      },
+      {
+        heading: "How to compare offers fairly",
+        paragraphs: ["Don't compare quoted rates — compare the total you'll repay:"],
+        list: [
+          "Ask whether the rate is flat or reducing balance.",
+          "Multiply the monthly instalment by the number of months to get the total repayable amount.",
+          "Add processing fees, insurance, and any other charges the lender requires.",
+          "Check the APR or effective interest rate if the lender is required to disclose it.",
+        ],
+      },
+      {
+        heading: "Where you'll see flat rates",
+        paragraphs: [
+          "Flat pricing is more common in some consumer-durable financing, certain vehicle loans, and informal lending. It isn't always disclosed prominently, so it's worth asking directly before you sign.",
+        ],
+      },
+      {
+        heading: "Check an offer yourself",
+        paragraphs: [
+          "Our EMI Calculator uses the reducing-balance method. Enter the loan amount, rate, and tenure, then compare the EMI and total interest with the figure a flat-rate lender quotes — the gap shows what the headline rate is hiding.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-much-sip-to-reach-your-goal",
+    title: "How Much Should You Invest Monthly to Reach a Goal?",
+    description:
+      "Work backwards from a target amount to the monthly SIP you need, and see how the time horizon changes the answer more than almost anything else.",
+    date: "2026-10-28",
+    category: "Finance",
+    readingTime: "5 min read",
+    relatedCalculator: { slug: "sip-calculator", label: "SIP Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "Most SIP guides start with an amount and show what it becomes. Goal planning works the other way round: you know what you need — a down payment, a child's education fund, a retirement corpus — and the question is how much to invest each month to get there.",
+        ],
+      },
+      {
+        heading: "Working backwards",
+        paragraphs: [
+          "The SIP maturity formula is M = P × [((1 + i)ⁿ − 1) / i] × (1 + i), where P is the monthly amount, i the monthly return, and n the number of months. To find the monthly amount for a target, rearrange it: P = M ÷ ([((1 + i)ⁿ − 1) / i] × (1 + i)).",
+        ],
+      },
+      {
+        heading: "A worked example",
+        paragraphs: [
+          "Suppose your goal is ₹1,00,00,000 in 15 years and you assume a 12% annual return, which is 1% a month over 180 months. Solving for P gives a monthly SIP of about ₹19,800. Over the 15 years you would put in about ₹35.7 lakh yourself, with the rest of the target coming from assumed returns.",
+          "The 12% figure is an assumption, not a promise. Market-linked returns vary year to year and can be negative for stretches, so treat the result as a planning target rather than a guaranteed outcome.",
+        ],
+      },
+      {
+        heading: "How the time horizon changes everything",
+        paragraphs: [
+          "Hold the same target and the same assumed 12% return, and change only the number of years:",
+        ],
+        list: [
+          "10 years: about ₹43,000 a month.",
+          "15 years: about ₹19,800 a month.",
+          "20 years: about ₹10,000 a month.",
+        ],
+      },
+      {
+        heading: "Why waiting is expensive",
+        paragraphs: [
+          "Moving from 20 years to 10 more than quadruples the monthly amount, because the early contributions have the longest time to compound. Starting five years later doesn't just cost you five years of contributions — it costs you the growth on every rupee invested in those years.",
+        ],
+      },
+      {
+        heading: "Ways to make the number realistic",
+        paragraphs: ["If the required amount is more than you can invest today:"],
+        list: [
+          "Start with what you can and raise the SIP whenever your income rises.",
+          "Extend the time horizon where the goal allows it.",
+          "Revisit the target — adjust it for inflation so it reflects what you'll actually need.",
+          "Review progress yearly rather than reacting to short-term market moves.",
+        ],
+      },
+      {
+        heading: "Match risk to the goal's timeline",
+        paragraphs: [
+          "Short-term goals can't absorb a market downturn, so equity-linked returns of 12% are not a sensible assumption for money you need in two or three years. Longer goals can tolerate more volatility. This guide is general information, not personal financial advice.",
+        ],
+      },
+      {
+        heading: "Try your own goal",
+        paragraphs: [
+          "Our SIP Calculator lets you vary the monthly amount, expected return, and years to see the projected value, so you can test a few combinations and find a plan that fits your budget.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "embedding-costs-explained",
+    title: "Embedding Costs Explained: What It Takes to Index Your Data",
+    description:
+      "How embedding pricing works, a worked indexing example, and the choices (model size, chunking, re-indexing) that change the bill.",
+    date: "2026-10-28",
+    category: "AI",
+    readingTime: "5 min read",
+    relatedCalculator: { slug: "embedding-cost-calculator", label: "Embedding Cost Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "Embeddings turn text into lists of numbers that capture its meaning, which is what makes semantic search and retrieval possible. They're among the cheapest AI operations you can buy — but the cost isn't zero, and it can add up for large or constantly changing datasets.",
+        ],
+      },
+      {
+        heading: "How embeddings are priced",
+        paragraphs: [
+          "Embedding models are billed per input token. There are no output tokens, because the result is a vector rather than generated text. Per-million-token prices are typically much lower than those for text-generation models, so the embedding step is rarely the largest line in an AI bill.",
+        ],
+      },
+      {
+        heading: "A worked example",
+        paragraphs: [
+          "Prices below are illustrative — use your provider's current rate. Say you have 500,000 documents averaging 400 tokens each. That's 500,000 × 400 = 200 million tokens. At $0.10 per million tokens, indexing costs 200 × $0.10 = $20.",
+          "Each search query also has to be embedded. A 20-token question at the same rate costs a tiny fraction of a cent, so even 1 million queries (20 million tokens) comes to about $2.",
+        ],
+      },
+      {
+        heading: "What changes the cost",
+        paragraphs: ["Several decisions move the number more than the per-token price:"],
+        list: [
+          "Corpus size — the main driver; cost scales directly with total tokens.",
+          "Chunking — overlapping chunks repeat text, so heavy overlap means embedding the same content more than once.",
+          "Re-indexing frequency — re-embedding everything on a schedule multiplies the cost, while updating only changed documents keeps it low.",
+          "Model choice — larger, higher-quality embedding models cost more per token.",
+        ],
+      },
+      {
+        heading: "Costs beyond the embedding call",
+        paragraphs: [
+          "Vectors have to be stored and searched. Higher-dimension embeddings take more storage and can make searches slower and more expensive in a managed vector database. Factor that in alongside the token cost, since it often recurs every month while the embedding bill is mostly one-off.",
+        ],
+      },
+      {
+        heading: "Practical habits",
+        paragraphs: ["A few habits keep embedding spend low without hurting search quality:"],
+        list: [
+          "Track a hash of each document so only changed content is re-embedded.",
+          "Remove boilerplate (navigation, footers, legal text) before embedding.",
+          "Use batch endpoints where available — they are often discounted.",
+          "Test a smaller embedding model on your own queries before assuming you need the largest one.",
+        ],
+      },
+      {
+        heading: "Estimate your indexing cost",
+        paragraphs: [
+          "Our Embedding Cost Calculator takes your document count, average length, and price per million tokens and returns the one-off indexing cost, so you can size a project before building it.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "ai-image-generation-cost-explained",
+    title: "How Much Does AI Image Generation Cost at Scale?",
+    description:
+      "How image APIs are priced, why the number of attempts matters more than the price per image, and how to budget for a real workflow.",
+    date: "2026-10-28",
+    category: "AI",
+    readingTime: "5 min read",
+    relatedCalculator: {
+      slug: "ai-image-generation-cost-calculator",
+      label: "AI Image Generation Cost Calculator",
+    },
+    sections: [
+      {
+        paragraphs: [
+          "Text models are billed by the token, but image models usually aren't. Most charge a price per generated image, and that price depends on the model, the resolution, and the quality setting. The per-image number looks small — the budget surprise comes from how many images you actually generate to end up with the ones you use.",
+        ],
+      },
+      {
+        heading: "What sets the price per image",
+        paragraphs: ["Providers vary, but the common factors are:"],
+        list: [
+          "The model — newer or higher-fidelity models usually cost more.",
+          "Resolution — larger outputs cost more than small ones.",
+          "Quality or steps — higher-quality settings take more compute and are priced higher.",
+          "Features — editing, upscaling, or variations may be billed separately from plain generation.",
+        ],
+      },
+      {
+        heading: "The attempts multiplier",
+        paragraphs: [
+          "In real workflows you rarely keep the first result. You might generate several candidates and refine your prompt before choosing one. If you average four attempts for every image you keep, your effective cost per final image is four times the listed price.",
+          "Illustration (use your provider's real price): at $0.04 per image, producing 1,000 final images with four attempts each means 4,000 generations, or $160 — not $40.",
+        ],
+      },
+      {
+        heading: "Other costs to include",
+        paragraphs: ["The generation fee is only part of the spend:"],
+        list: [
+          "Prompt writing and review time, which is often the biggest real cost.",
+          "Upscaling or editing passes before an image is publishable.",
+          "Storage and delivery of the finished files.",
+          "Moderation or human review where images are shown to customers.",
+        ],
+      },
+      {
+        heading: "Ways to bring the cost down",
+        paragraphs: ["The habits that help most are the ones that reduce wasted attempts:"],
+        list: [
+          "Draft at a low resolution or quality, then regenerate only the keeper at full quality.",
+          "Save prompts and settings that work and reuse them.",
+          "Generate in batches where the provider discounts them.",
+          "Set a monthly spending cap so a runaway script can't surprise you.",
+        ],
+      },
+      {
+        heading: "Rights and usage",
+        paragraphs: [
+          "Check the provider's terms for commercial use and for what you may do with generated images. This is separate from cost but can affect whether the workflow is viable for your business.",
+        ],
+      },
+      {
+        heading: "Estimate your volume",
+        paragraphs: [
+          "Our AI Image Generation Cost Calculator takes the price per image and your monthly volume, so you can model the effect of extra attempts before committing to a workflow.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "ai-video-generation-cost-explained",
+    title: "AI Video Generation Cost: Pricing per Second, and Why Takes Add Up",
+    description:
+      "How video generation is priced, a worked example for a batch of clips, and how to avoid paying for takes you throw away.",
+    date: "2026-10-28",
+    category: "AI",
+    readingTime: "5 min read",
+    relatedCalculator: {
+      slug: "ai-video-cost-calculator",
+      label: "AI Video Generation Cost Calculator",
+    },
+    sections: [
+      {
+        paragraphs: [
+          "Video is the most expensive kind of AI generation, because each second is made of many frames and every frame needs to be consistent with the others. Providers usually price it per second of output (or per clip of a fixed length), and the rate depends heavily on the model and resolution.",
+        ],
+      },
+      {
+        heading: "The basic cost formula",
+        paragraphs: [
+          "Cost per clip = seconds of video × price per second. Total cost = cost per clip × number of takes × number of clips.",
+        ],
+      },
+      {
+        heading: "A worked example",
+        paragraphs: [
+          "The price here is illustrative — use your provider's current rate. At $0.30 per second, a 30-second clip costs $9. If it takes three takes to get one you're happy with, that clip really costs $27. Produce 100 such clips and you're at $2,700.",
+        ],
+      },
+      {
+        heading: "Why takes matter even more than for images",
+        paragraphs: [
+          "Generated video can drift: faces change between frames, objects morph, motion looks unnatural. Each rejected take is paid for in full, and a single flaw can ruin a long clip. Shorter shots that you edit together are usually cheaper to retry than one long generation.",
+        ],
+      },
+      {
+        heading: "What increases the price",
+        paragraphs: ["Expect higher costs when you choose:"],
+        list: [
+          "Higher resolution or frame rate.",
+          "Longer clip durations.",
+          "Premium or newer models.",
+          "Extra features such as audio generation, lip sync, or camera controls, where offered.",
+        ],
+      },
+      {
+        heading: "Ways to control spend",
+        paragraphs: ["The teams that keep video costs sensible tend to:"],
+        list: [
+          "Prototype with low resolution or short previews, then render the final shot at full quality.",
+          "Plan shots in advance so prompts are specific and fewer takes are wasted.",
+          "Generate short segments and edit them together rather than one long clip.",
+          "Reuse approved footage — backgrounds, loops, and b-roll — across projects.",
+        ],
+      },
+      {
+        heading: "When it still beats the alternative",
+        paragraphs: [
+          "Compare against the real alternative, not against free. If a clip would otherwise need a shoot, actors, and editing, a few dollars of generation is cheap. If a stock clip does the job, it may cost less than several generated takes.",
+        ],
+      },
+      {
+        heading: "Budget your project",
+        paragraphs: [
+          "Our AI Video Generation Cost Calculator uses seconds per clip, price per second, and the number of clips, so you can see how a few extra takes change a project's total.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "ai-saas-pricing-and-margins",
+    title: "Pricing an AI Product: How to Keep Your Margins Positive",
+    description:
+      "How per-user AI costs work, why heavy users can wipe out a flat subscription's profit, and the pricing structures that protect margins.",
+    date: "2026-10-28",
+    category: "AI",
+    readingTime: "6 min read",
+    relatedCalculator: { slug: "ai-saas-cost-calculator", label: "AI SaaS Cost Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "Traditional software has near-zero cost per extra user. AI products don't: every request a user makes costs you real money in tokens or compute. That changes how you should price, and it's the reason flat subscriptions can quietly lose money on your most engaged customers.",
+        ],
+      },
+      {
+        heading: "Start with cost per user",
+        paragraphs: [
+          "Cost per user per month = requests per user × cost per request. The cost per request comes from the tokens you send and receive, multiplied by your provider's rates.",
+          "Illustration: if a typical request costs $0.01 and a typical user makes 300 requests a month, that's $3 per user. On a $20 plan that leaves about 85% gross margin before other costs.",
+        ],
+      },
+      {
+        heading: "The heavy-user problem",
+        paragraphs: [
+          "Usage is rarely evenly spread. If a heavy user makes ten times as many requests — 3,000 a month — the same user costs $30 on a $20 plan, a loss of $10. A handful of such users can erase the profit from many light ones, and they're often the most enthusiastic customers.",
+        ],
+      },
+      {
+        heading: "Pricing structures that protect margin",
+        paragraphs: ["Common approaches, often combined:"],
+        list: [
+          "Usage limits or fair-use caps inside a flat plan.",
+          "Credits that are consumed per action, with top-ups for heavy use.",
+          "Tiered plans where higher tiers include more usage and more capable (costlier) models.",
+          "Pure usage-based pricing for developer-facing products.",
+        ],
+      },
+      {
+        heading: "Costs beyond the model",
+        paragraphs: ["Remember the rest of the cost stack when calculating margin:"],
+        list: [
+          "Hosting, databases, and vector storage.",
+          "Payment processing fees.",
+          "Support and customer success.",
+          "Free-tier and trial users who cost money without paying.",
+        ],
+      },
+      {
+        heading: "Levers that lower your cost per request",
+        paragraphs: ["As usage grows, these protect the margin you priced in:"],
+        list: [
+          "Routing simple requests to a smaller, cheaper model.",
+          "Caching repeated prompts and responses where appropriate.",
+          "Trimming prompts and limiting the context you send.",
+          "Using batch endpoints for work that doesn't need an instant answer.",
+        ],
+      },
+      {
+        heading: "Track it from day one",
+        paragraphs: [
+          "Log token usage and cost per user from launch. Model prices change, and so do user habits, so margins you calculated at launch can drift. Watching the distribution — not just the average — shows you problems before they become losses.",
+        ],
+      },
+      {
+        heading: "Model your own plan",
+        paragraphs: [
+          "Our AI SaaS Cost Calculator helps you estimate per-user cost and margin at different usage levels, so you can set plan limits and prices with real numbers behind them.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-to-measure-ai-roi",
+    title: "How to Measure the ROI of an AI Project (Without Fooling Yourself)",
+    description:
+      "A practical framework for counting AI costs and benefits honestly, with a worked example showing why realisation rate changes the answer.",
+    date: "2026-10-28",
+    category: "AI",
+    readingTime: "6 min read",
+    relatedCalculator: { slug: "ai-roi-calculator", label: "AI ROI Calculator" },
+    sections: [
+      {
+        paragraphs: [
+          "AI projects often get approved on a headline benefit — hours saved, tickets deflected, faster turnaround — and then struggle to show a return. The usual cause isn't that the technology failed; it's that the costs were undercounted, the benefits overcounted, or both.",
+        ],
+      },
+      {
+        heading: "Count the full cost",
+        paragraphs: ["A realistic cost side includes more than API or licence fees:"],
+        list: [
+          "Usage costs — API tokens, subscriptions, or infrastructure.",
+          "Build and integration — engineering time to connect it to your systems.",
+          "Maintenance — prompt tuning, monitoring, and handling model changes.",
+          "Training and change management — getting people to actually use it.",
+          "Review time — people checking the AI's output when accuracy matters.",
+        ],
+      },
+      {
+        heading: "Count the benefit conservatively",
+        paragraphs: [
+          "The simplest benefit estimate is hours saved × the loaded hourly cost of the people involved. But saved time is not the same as saved money. Unless the freed hours are redeployed to valuable work or reduce actual spend, the saving is theoretical. That's why a realisation rate — the share of the saved time that truly turns into value — is worth applying.",
+        ],
+      },
+      {
+        heading: "A worked example",
+        paragraphs: [
+          "Ten people each save 5 hours a week using an AI assistant. That's 50 hours a week, or about 2,600 hours over 52 weeks. At a loaded cost of $30 an hour the headline benefit is $78,000 a year.",
+          "First-year costs: $12,000 in usage and licences, $15,000 to build and integrate, and $6,000 for maintenance and review, totalling $33,000.",
+        ],
+        list: [
+          "If all the saved time becomes value: ROI = (78,000 − 33,000) ÷ 33,000 ≈ 136%.",
+          "If only 60% of it does: benefit is $46,800, so ROI = (46,800 − 33,000) ÷ 33,000 ≈ 42%.",
+        ],
+      },
+      {
+        heading: "Still worthwhile, but a different decision",
+        paragraphs: [
+          "Both results are positive, yet 42% and 136% lead to very different conclusions about priority and risk. Showing both — an optimistic and a conservative case — is more credible than a single number.",
+        ],
+      },
+      {
+        heading: "Benefits that aren't hours",
+        paragraphs: ["Some value is real but harder to price, and worth naming separately:"],
+        list: [
+          "Faster response or turnaround time for customers.",
+          "Fewer errors or less rework.",
+          "Higher conversion or retention from better service.",
+          "Capacity to take on work you couldn't previously handle.",
+        ],
+      },
+      {
+        heading: "Measure before and after",
+        paragraphs: [
+          "Record the baseline — time per task, cost per ticket, error rate — before the project starts. Without it you'll be comparing results against guesses. Revisit the numbers after a few months of real usage and update the estimate.",
+        ],
+      },
+      {
+        heading: "Run the numbers",
+        paragraphs: [
+          "Our AI ROI Calculator takes your costs and expected savings and returns the return on investment, so you can test optimistic and conservative assumptions side by side.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-to-compare-ai-model-prices",
+    title: "How to Compare AI Model Prices (Per-Token Cost Isn't the Whole Story)",
+    description:
+      "Why the cheapest price per million tokens isn't always the cheapest model, and how to compare on cost per completed task instead.",
+    date: "2026-10-28",
+    category: "AI",
+    readingTime: "5 min read",
+    relatedCalculator: { slug: "ai-model-cost-comparison", label: "AI Model Cost Comparison" },
+    sections: [
+      {
+        paragraphs: [
+          "Model price lists are easy to compare: two columns of dollars per million tokens. But picking the model with the lowest numbers often costs more in practice. What matters to your budget is the cost of getting a task done correctly, not the cost of a token.",
+        ],
+      },
+      {
+        heading: "Step 1: price a typical request",
+        paragraphs: [
+          "Input and output tokens are priced differently, and output is usually the more expensive. So compare on a realistic request shape: cost = input tokens × input price + output tokens × output price.",
+          "Illustration (made-up prices): Model A charges $1 per million input and $5 per million output tokens; Model B charges $3 and $15. For a task with 2,000 input and 500 output tokens, A costs $0.0045 and B costs $0.0135 — three times as much.",
+        ],
+      },
+      {
+        heading: "Step 2: account for success rate",
+        paragraphs: [
+          "A cheaper model that gets the answer right less often needs retries, human fixes, or fallbacks to a stronger model. Compare cost per successful result: cost per request ÷ success rate.",
+          "If A succeeds on 40% of these tasks and B on 90%, A's cost per success is $0.0045 ÷ 0.4 ≈ $0.011 and B's is $0.0135 ÷ 0.9 = $0.015. A is still cheaper in this case, but the 3× gap has shrunk to about 1.3×, and a slightly lower success rate for A would reverse it.",
+        ],
+      },
+      {
+        heading: "Other differences worth checking",
+        paragraphs: ["Beyond the headline rates, look at:"],
+        list: [
+          "Verbosity — a model that writes longer answers generates more billable output tokens.",
+          "Context window — can the model fit your documents without chunking tricks?",
+          "Caching and batch discounts, which can substantially reduce effective cost for repeated or non-urgent work.",
+          "Latency — a slower model may be unacceptable for interactive use, whatever its price.",
+          "Rate limits and availability at the volume you need.",
+        ],
+      },
+      {
+        heading: "Use more than one model",
+        paragraphs: [
+          "Many production systems route by difficulty: a cheap model handles routine requests and a stronger one handles the hard cases. This usually beats committing to a single model for everything.",
+        ],
+      },
+      {
+        heading: "Test on your own data",
+        paragraphs: [
+          "Public benchmarks measure general ability, not your task. Build a small set of real examples with known good answers and measure success rate, tokens used, and cost for each candidate. An hour of testing is cheap compared with a year of overpaying.",
+        ],
+      },
+      {
+        heading: "Compare side by side",
+        paragraphs: [
+          "Our AI Model Cost Comparison lets you set the same input and output volumes across models, so the monthly difference is visible at a glance. Prices change often, so check each provider's current rates before deciding.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "core-web-vitals-explained",
+    title: "Core Web Vitals Explained: LCP, INP, and CLS in Plain English",
+    description:
+      "What each Core Web Vital measures, the thresholds for a good score, how to measure them properly, and the most common fixes.",
+    date: "2026-10-28",
+    category: "Web Development",
+    readingTime: "6 min read",
+    sections: [
+      {
+        paragraphs: [
+          "Core Web Vitals are three measurements Google uses to describe how a page feels to a real visitor: how fast the main content appears, how quickly the page responds when you interact, and whether things jump around while loading. They are part of Google's page experience signals, so they matter for rankings as well as for keeping visitors from leaving.",
+        ],
+      },
+      {
+        heading: "Largest Contentful Paint (LCP): loading",
+        paragraphs: [
+          "LCP is the time it takes for the largest visible element — often a hero image or a large heading — to render. A good score is 2.5 seconds or less.",
+        ],
+        list: [
+          "Common causes of a slow LCP: a slow server response, an oversized hero image, or CSS and scripts that block rendering.",
+          "Typical fixes: compress and correctly size images, serve modern formats, use a CDN, preload the key image, and avoid loading unnecessary scripts before the main content.",
+        ],
+      },
+      {
+        heading: "Interaction to Next Paint (INP): responsiveness",
+        paragraphs: [
+          "INP measures how long the page takes to visually respond after interactions such as clicks, taps, and key presses, reported across the visit. A good score is 200 milliseconds or less.",
+        ],
+        list: [
+          "Common causes of a poor INP: heavy JavaScript that keeps the browser busy, long tasks, and expensive handlers on buttons or inputs.",
+          "Typical fixes: ship less JavaScript, split long tasks into smaller pieces, defer non-essential scripts, and keep event handlers light.",
+        ],
+      },
+      {
+        heading: "Cumulative Layout Shift (CLS): visual stability",
+        paragraphs: [
+          "CLS adds up how much visible content unexpectedly moves while the page loads — the experience of tapping a button just as an ad pushes it away. A good score is 0.1 or less.",
+        ],
+        list: [
+          "Common causes of layout shift: images and embeds without set dimensions, late-loading ads or banners, and web fonts that swap in and change text size.",
+          "Typical fixes: set width and height (or an aspect ratio) on images and video, reserve space for dynamic content, and load fonts in a way that avoids big reflows.",
+        ],
+      },
+      {
+        heading: "Field data versus lab data",
+        paragraphs: [
+          "Lab tools such as Lighthouse run a simulated test on one device and connection, which is great for debugging. Field data comes from real users, and it's what Google uses for assessment. A page is evaluated on the 75th percentile of visits, meaning most of your real visitors, not just the fast ones, need a good experience.",
+        ],
+      },
+      {
+        heading: "How to measure",
+        paragraphs: ["A practical routine:"],
+        list: [
+          "Open the Core Web Vitals report in Google Search Console to see which groups of pages need work.",
+          "Test individual URLs in PageSpeed Insights, which shows both field and lab data.",
+          "Use Lighthouse in Chrome DevTools to find the specific causes.",
+          "Re-check after changes — field data updates over a period of weeks, not instantly.",
+        ],
+      },
+      {
+        heading: "Keep it in proportion",
+        paragraphs: [
+          "Good Core Web Vitals will not make thin content rank, and relevance and quality still come first. But a slow or jumpy page loses visitors regardless of rankings, so the work pays off either way. If you'd like help auditing and fixing performance on your site, reach out through the contact page.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "whmcs-automation-for-hosting-business",
+    title: "What WHMCS Automates for a Hosting Business",
+    description:
+      "How WHMCS handles billing, provisioning, domains, and support, and where custom modules fill the gaps for a growing hosting company.",
+    date: "2026-10-28",
+    category: "Web Development",
+    readingTime: "5 min read",
+    sections: [
+      {
+        paragraphs: [
+          "Running a hosting or domain business by hand stops working the moment you have more than a handful of customers. WHMCS is a widely used billing and automation platform for exactly this situation: it connects ordering, payments, provisioning, and support so the routine work happens without someone clicking through it.",
+        ],
+      },
+      {
+        heading: "Billing and invoicing",
+        paragraphs: ["The financial side is usually the first thing teams automate:"],
+        list: [
+          "Recurring invoices generated and sent on schedule.",
+          "Payment collection through connected payment gateways.",
+          "Reminders for upcoming and overdue invoices.",
+          "Support for different billing cycles, taxes, and currencies.",
+        ],
+      },
+      {
+        heading: "Provisioning and the service lifecycle",
+        paragraphs: [
+          "When a customer orders and pays, WHMCS can create the account on your server or platform automatically through a provisioning module. It can also suspend a service when an invoice goes unpaid, unsuspend it once payment arrives, and terminate it after a set period — so account status follows billing status without manual intervention.",
+        ],
+      },
+      {
+        heading: "Domains",
+        paragraphs: [
+          "Domain registrar modules let customers register, renew, and transfer domains through your own storefront, with pricing and renewal reminders handled by the platform instead of by spreadsheet.",
+        ],
+      },
+      {
+        heading: "Support and the client area",
+        paragraphs: [
+          "Customers get a client area where they can view invoices, manage services, and open support tickets. Your team works from a shared ticket system, which keeps requests in one place rather than scattered across email threads.",
+        ],
+      },
+      {
+        heading: "Where custom development comes in",
+        paragraphs: [
+          "Out-of-the-box features cover the common cases, but real businesses have specific requirements. Custom modules and hooks are how teams extend WHMCS to:",
+        ],
+        list: [
+          "Provision services on a platform that doesn't have a ready-made module.",
+          "Integrate a payment gateway or registrar that isn't supported.",
+          "Add custom fields, reports, or automation triggered by events.",
+          "Connect WHMCS to internal tools, CRMs, or monitoring.",
+        ],
+      },
+      {
+        heading: "What to get right",
+        paragraphs: ["Customisation is powerful but needs care:"],
+        list: [
+          "Keep customisations in modules and hooks rather than editing core files, so upgrades don't overwrite your work.",
+          "Test provisioning, suspension, and renewal flows on a staging copy before going live.",
+          "Log what your automation does, so failures can be traced.",
+          "Back up the database and files before upgrades.",
+        ],
+      },
+      {
+        heading: "Need a custom module?",
+        paragraphs: [
+          "WHMCS module development is one of the services we offer. If you have a provisioning, gateway, or registrar integration in mind, get in touch through the contact page and we can talk through what it would take. For a deeper technical look, see our guide to WHMCS module development.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {
