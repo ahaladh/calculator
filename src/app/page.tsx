@@ -163,6 +163,45 @@ export default function Home() {
             </span>
           </Link>
         </RevealOnScroll>
+
+        <RevealOnScroll>
+          <Link
+            href="/pdf-tools"
+            className="group flex flex-col items-start gap-4 rounded-2xl border border-border bg-surface p-8 transition-all hover:border-accent hover:shadow-md sm:flex-row sm:items-center sm:justify-between"
+          >
+            <div className="flex items-center gap-4">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent/10">
+                <CategoryIcon slug="company" className="h-6 w-6 text-accent" />
+              </span>
+              <div className="flex flex-col gap-1">
+                <h2 className="text-xl font-semibold tracking-tight">
+                  PDF tools
+                </h2>
+                <p className="max-w-xl text-muted">
+                  Merge, split, compress, convert, edit, and sign PDFs
+                  from one toolkit.
+                </p>
+              </div>
+            </div>
+            <span className="flex shrink-0 items-center gap-1.5 rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors group-hover:border-accent group-hover:text-accent">
+              Explore PDF tools
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="transition-transform group-hover:translate-x-0.5"
+              >
+                <path d="M5 12h14" />
+                <path d="M12 5l7 7-7 7" />
+              </svg>
+            </span>
+          </Link>
+        </RevealOnScroll>
       </div>
     </div>
   );
