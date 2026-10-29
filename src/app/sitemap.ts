@@ -6,6 +6,7 @@ import { SITE_URL } from "@/lib/site";
 const STATIC_ROUTES: { path: string; priority: number; changeFrequency: "weekly" | "monthly" }[] = [
   { path: "", priority: 1, changeFrequency: "weekly" },
   { path: "/calculators", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/pdf-tools", priority: 0.7, changeFrequency: "monthly" },
   { path: "/blog", priority: 0.8, changeFrequency: "weekly" },
   { path: "/portfolio", priority: 0.5, changeFrequency: "monthly" },
   { path: "/sitemap", priority: 0.3, changeFrequency: "monthly" },
