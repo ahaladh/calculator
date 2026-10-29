@@ -19,7 +19,6 @@ const SITE_LINKS = [
   { href: "/", label: "Home" },
   { href: "/#services", label: "Services" },
   { href: "/calculators", label: "Calculators" },
-  { href: "/pdf-tools", label: "PDF Tools" },
   { href: "/blog", label: "Blog" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/contact#about", label: "About" },
